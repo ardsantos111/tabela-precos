@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo & Sugestão de Lentes</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #3b82f6;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: var(--bg); color: var(--text); padding: 12px; line-height: 1.5; }
+        header { background: var(--primary); color: white; padding: 16px; border-radius: 12px; margin-bottom: 16px; text-align: center; }
+        header h1 { font-size: 1.4rem; font-weight: 700; }
+        header p { font-size: 0.85rem; opacity: 0.85; margin-top: 4px; }
+        .card { background: var(--card-bg); border-radius: 12px; padding: 16px; margin-bottom: 16px; border: 1px solid var(--border); box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .card-title { font-size: 1.1rem; font-weight: 600; color: var(--primary); margin-bottom: 12px; }
+        .grid-inputs { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 10px; }
+        .input-group { display: flex; flex-direction: column; }
+        .input-group label { font-size: 0.75rem; font-weight: 600; color: var(--text-muted); margin-bottom: 4px; text-transform: uppercase; }
+        .input-group input, .input-group select { padding: 10px; border: 1px solid var(--border); border-radius: 8px; font-size: 0.95rem; outline: none; }
+        .suggestion-box { background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 8px; padding: 12px; margin-top: 12px; font-size: 0.88rem; color: #065f46; display: none; }
+        .btn-clear { background: #ef4444; color: white; border: none; padding: 10px 16px; border-radius: 8px; font-weight: 600; cursor: pointer; margin-top: 12px; width: 100%; }
+        .results-count { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px; font-weight: 500; }
+        .lens-card { background: var(--card-bg); border-radius: 10px; border: 1px solid var(--border); padding: 14px; margin-bottom: 12px; }
+        .lens-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+        .lens-title { font-weight: 700; font-size: 1rem; color: var(--primary); }
+        .lens-badge { background: #e0f2fe; color: #0369a1; font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 12px; }
+        .lens-meta { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 8px; }
+        .lens-disp { font-size: 0.8rem; background: #f1f5f9; padding: 6px 10px; border-radius: 6px; margin-bottom: 10px; color: #334155; }
+        .price-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 8px; margin-top: 8px; border-top: 1px dashed var(--border); padding-top: 8px; }
+        .price-item { font-size: 0.8rem; background: #fafafa; padding: 6px 8px; border-radius: 6px; border: 1px solid #f1f5f9; }
+        .price-label { font-size: 0.7rem; color: var(--text-muted); display: block; }
+        .price-val { font-weight: 700; color: #0f172a; font-size: 0.9rem; }
+        @media (min-width: 768px) { body { max-width: 1000px; margin: 0 auto; padding: 20px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Catálogo & Sugestão de Lentes</h1>
+        <p>Consulte preços, tratamentos e indique a melhor opção pela receita</p>
+    </header>
+
+    <div class="card">
+        <div class="card-title">👓 Simulador por Receita do Cliente</div>
+        <div class="grid-inputs">
+            <div class="input-group"><label>Esférico (Esf)</label><input type="number" id="esf" step="0.25" placeholder="0.00"></div>
+            <div class="input-group"><label>Cilindrico (Cil)</label><input type="number" id="cil" step="0.25" placeholder="0.00"></div>
+            <div class="input-group"><label>Adição (Add)</label><input type="number" id="add" step="0.25" placeholder="0.00"></div>
+        </div>
+        <div id="suggestionBox" class="suggestion-box"></div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">🔍 Filtros de Busca</div>
+        <div class="grid-inputs">
+            <div class="input-group"><label>Buscar Lente / Código</label><input type="text" id="search" placeholder="Ex: Haytek, SP50PN..."></div>
+            <div class="input-group"><label>Categoria</label><select id="filterCategoria"><option value="">Todas</option></select></div>
+            <div class="input-group"><label>Família</label><select id="filterFamilia"><option value="">Todas</option></select></div>
+            <div class="input-group"><label>Índice</label><select id="filterIndice"><option value="">Todos</option></select></div>
+        </div>
+        <button class="btn-clear" onclick="clearFilters()">Limpar Filtros</button>
+    </div>
+
+    <div class="results-count" id="resultsCount">Carregando...</div>
+    <div id="productsList"></div>
+
+    <script>
+        // Dados da planilha
+        const rawData = []; // Código completo no passo a passo
+    </script>
+</body>
+</html>
