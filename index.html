@@ -23,7 +23,7 @@
         .card-title { font-size: 1.1rem; font-weight: 600; color: var(--primary); margin-bottom: 12px; }
         
         .eye-section { background: #f1f5f9; border-radius: 8px; padding: 10px; margin-bottom: 10px; }
-        .eye-title { font-size: 0.85rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+        .eye-title { font-size: 0.85rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
         
         .grid-inputs { display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 10px; }
         .input-group { display: flex; flex-direction: column; }
@@ -100,8 +100,155 @@
     <div class="results-count" id="resultsCount">Carregando...</div>
     <div id="productsList"></div>
 
+    <!-- Carrega a tabela de dados do arquivo data.js -->
+    <script src="data.js"></script>
+
+    <!-- Código principal de pesquisa e sugestão -->
     <script>
-        // O código completo já foi gerado e inclui os 254 produtos da planilha
+        const odEsf = document.getElementById('od_esf');
+        const odCil = document.getElementById('od_cil');
+        const oeEsf = document.getElementById('oe_esf');
+        const oeCil = document.getElementById('oe_cil');
+        const addInput = document.getElementById('add');
+        
+        const searchInput = document.getElementById('search');
+        const catSelect = document.getElementById('filterCategoria');
+        const famSelect = document.getElementById('filterFamilia');
+        const indSelect = document.getElementById('filterIndice');
+        
+        const suggestionBox = document.getElementById('suggestionBox');
+        const resultsCount = document.getElementById('resultsCount');
+        const productsList = document.getElementById('productsList');
+
+        function initFilters() {
+            if (typeof rawData === 'undefined') {
+                resultsCount.innerText = "⚠️ O arquivo data.js não foi encontrado. Certifique-se de ter criado o arquivo data.js no repositório.";
+                return;
+            }
+
+            const categorias = [...new Set(rawData.map(i => i.Categoria).filter(Boolean))];
+            const familias = [...new Set(rawData.map(i => i.Família).filter(Boolean))];
+            const indices = [...new Set(rawData.map(i => i.Índice).filter(Boolean))].sort();
+
+            categorias.forEach(c => catSelect.add(new Option(c, c)));
+            familias.forEach(f => famSelect.add(new Option(f, f)));
+            indices.forEach(i => indSelect.add(new Option(i, i)));
+
+            [odEsf, odCil, oeEsf, oeCil, addInput, searchInput, catSelect, famSelect, indSelect].forEach(el => {
+                el.addEventListener('input', render);
+            });
+
+            render();
+        }
+
+        function getSuggestedIndice(maxDegree) {
+            const absDegree = Math.abs(maxDegree);
+            if (absDegree <= 2.00) return ["1.50", "1.5", "1.56"];
+            if (absDegree <= 4.00) return ["1.56", "1.59", "1.60", "1.6"];
+            return ["1.67", "1.74"];
+        }
+
+        function render() {
+            if (typeof rawData === 'undefined') return;
+
+            const esfOD = parseFloat(odEsf.value) || 0;
+            const cilOD = parseFloat(odCil.value) || 0;
+            const esfOE = parseFloat(oeEsf.value) || 0;
+            const cilOE = parseFloat(oeCil.value) || 0;
+            const add = parseFloat(addInput.value) || 0;
+
+            const search = searchInput.value.toLowerCase().trim();
+            const selectedCat = catSelect.value;
+            const selectedFam = famSelect.value;
+            const selectedInd = indSelect.value;
+
+            const maxOD = Math.abs(esfOD) + Math.abs(cilOD);
+            const maxOE = Math.abs(esfOE) + Math.abs(cilOE);
+            const maxDegree = Math.max(maxOD, maxOE);
+
+            const hasDegree = odEsf.value !== '' || odCil.value !== '' || oeEsf.value !== '' || oeCil.value !== '' || addInput.value !== '';
+
+            if (hasDegree) {
+                const suggestedIndices = getSuggestedIndice(maxDegree);
+                let text = `💡 <strong>Recomendação Técnica:</strong> Maior dioptria detectada: <strong>${maxDegree.toFixed(2)} D</strong>. Recomendamos índice de refração <strong>${suggestedIndices.join(', ')}</strong> para otimizar espessura e peso.`;
+                if (add > 0) {
+                    text += `<br>🔎 <strong>Adição detectada (${add.toFixed(2)} D):</strong> Filtrando preferencialmente Lentes Surfaçadas / Multifocais / Progressivas.`;
+                }
+                suggestionBox.innerHTML = text;
+                suggestionBox.style.display = 'block';
+            } else {
+                suggestionBox.style.display = 'none';
+            }
+
+            const filtered = rawData.filter(item => {
+                if (search && !item.Produto.toLowerCase().includes(search) && !item.Código.toLowerCase().includes(search)) return false;
+                if (selectedCat && item.Categoria !== selectedCat) return false;
+                if (selectedFam && item.Família !== selectedFam) return false;
+                if (selectedInd && item.Índice !== selectedInd) return false;
+
+                if (add > 0 && item.Categoria === 'Lentes Prontas' && !item.Produto.toLowerCase().includes('progressiva')) {
+                    return false;
+                }
+
+                return true;
+            });
+
+            resultsCount.innerText = `Exibindo ${filtered.length} de ${rawData.length} produtos`;
+
+            if (filtered.length === 0) {
+                productsList.innerHTML = '<div class="card" style="text-align:center; color: var(--text-muted);">Nenhuma lente encontrada com os filtros selecionados.</div>';
+                return;
+            }
+
+            productsList.innerHTML = filtered.map(item => {
+                const prices = [
+                    { label: 'Antirrisco', val: item['Antirrisco'] },
+                    { label: 'Antirrisco Tingível', val: item['Antirrisco Tingível'] },
+                    { label: 'AR Verde', val: item['Antirreflexo Verde'] },
+                    { label: 'AR Azul', val: item['Antirreflexo Azul'] },
+                    { label: 'AR Prem. Verde', val: item['Antirreflexo Premium Verde'] },
+                    { label: 'AR Prem. Azul', val: item['Antirreflexo Premium Azul'] },
+                    { label: 'Preço Base/Grade', val: item['Preço Base/Grade'] }
+                ].filter(p => p.val && p.val !== '');
+
+                return `
+                    <div class="lens-card">
+                        <div class="lens-header">
+                            <div>
+                                <div class="lens-title">${item.Produto}</div>
+                                <div class="lens-meta">Cód: <strong>${item.Código}</strong> | Família: <strong>${item.Família}</strong></div>
+                            </div>
+                            <span class="lens-badge">${item.Índice ? 'Índice ' + item.Índice : 'Pronta'}</span>
+                        </div>
+                        ${item.Disponibilidade ? `<div class="lens-disp"><strong>Grade:</strong> ${item.Disponibilidade}</div>` : ''}
+                        
+                        <div class="price-grid">
+                            ${prices.map(p => `
+                                <div class="price-item">
+                                    <span class="price-label">${p.label}</span>
+                                    <span class="price-val">${p.val}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function clearFilters() {
+            odEsf.value = '';
+            odCil.value = '';
+            oeEsf.value = '';
+            oeCil.value = '';
+            addInput.value = '';
+            searchInput.value = '';
+            catSelect.value = '';
+            famSelect.value = '';
+            indSelect.value = '';
+            render();
+        }
+
+        window.onload = initFilters;
     </script>
 </body>
 </html>
