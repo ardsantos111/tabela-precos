@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sugestão de Lentes & Catálogo Óptico — v1.0</title>
+    <title>Sugestão de Lentes & Catálogo Óptico — v1.1</title>
     <!-- Google Fonts Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -164,6 +164,77 @@
             .ov-cut-line { border-top: 2px dashed black; margin: 20px 0 14px 0; text-align: center; position: relative; }
             .ov-cut-line span { background: white; padding: 0 12px; font-size: 8pt; font-weight: bold; position: relative; top: -10px; }
         }
+
+        /* ===== EXPERIÊNCIA COMERCIAL v1.1 ===== */
+        body { background: linear-gradient(180deg, #F7FAFF 0%, #F4F7FB 420px, #F5F7FA 100%); }
+        header { box-shadow: 0 1px 0 rgba(14, 68, 145, .04); }
+        .header-icon { border: 1px solid #D8E8FF; }
+        .header-text h1 { letter-spacing: -0.02em; }
+        .main-container { margin-top: 16px; }
+        .stepper { position: relative; overflow: hidden; padding: 11px 18px; }
+        .stepper::before { content: ''; position: absolute; left: 9%; right: 9%; top: 50%; height: 2px; background: #E4EBF4; z-index: 0; }
+        .step-item { position: relative; z-index: 1; background: white; padding: 0 8px; }
+        .step-item.active .step-num { box-shadow: 0 0 0 4px #EAF2FF; }
+        .card { border-color: #D9E4F0; box-shadow: 0 4px 18px rgba(32, 65, 110, .055); }
+        .card-title { letter-spacing: -0.01em; }
+        .eye-card { background: linear-gradient(180deg, #F9FBFE 0%, #F6F9FD 100%); }
+        .input-group label { text-transform: none; font-size: .73rem; letter-spacing: .01em; }
+        .input-group input, .input-group select { min-height: 38px; }
+        .filter-actions { align-items: center; }
+        .products-grid { gap: 18px; }
+        .lens-card { border-color: #D7E3F0; padding: 0; overflow: hidden; box-shadow: 0 5px 18px rgba(27, 57, 96, .055); }
+        .lens-card:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(28, 73, 132, .12); }
+        .lens-card.selected-product { border-color: #0A57D5; box-shadow: 0 0 0 3px #DCEBFF, 0 14px 32px rgba(28,73,132,.12); }
+        .lens-card-inner { padding: 18px; display:flex; flex-direction:column; height:100%; }
+        .commercial-kicker { font-size: .72rem; font-weight: 800; color: #7A5B00; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 5px; }
+        .commercial-title { font-size: 1.08rem; font-weight: 800; color: #10233F; letter-spacing: -.018em; line-height: 1.28; }
+        .commercial-subtitle { margin-top: 5px; font-size: .82rem; color: #50627A; line-height: 1.4; }
+        .tier-badge { display:inline-flex; align-items:center; gap:4px; border-radius:999px; padding:3px 8px; font-size:.68rem; font-weight:800; border:1px solid; }
+        .tier-premium { color:#6F4F00; background:#FFF7D6; border-color:#F2D572; }
+        .tier-balance { color:#075A3D; background:#EAF9F2; border-color:#B7E8D2; }
+        .tier-essential { color:#42526A; background:#F1F4F8; border-color:#D8E0EA; }
+        .benefits-list { display:grid; gap:5px; margin:11px 0 12px; }
+        .benefit-item { display:flex; gap:7px; align-items:flex-start; font-size:.79rem; color:#34455E; }
+        .benefit-item svg { flex:0 0 auto; margin-top:1px; color:#168A5B; }
+        details.tech-details { margin: 0 0 12px; border-top: 1px solid #EDF1F6; border-bottom: 1px solid #EDF1F6; padding: 8px 0; }
+        details.tech-details summary { cursor:pointer; color:#24558E; font-size:.76rem; font-weight:700; list-style:none; display:flex; align-items:center; justify-content:space-between; }
+        details.tech-details summary::-webkit-details-marker { display:none; }
+        .tech-content { padding-top:8px; display:grid; gap:6px; font-size:.75rem; color:#5A687B; }
+        .price-section { border-top: none; padding-top: 0; }
+        .treatment-title { display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:8px; }
+        .treatment-title strong { font-size:.76rem; color:#43536A; }
+        .treatment-title span { font-size:.68rem; color:#7A8798; }
+        .price-grid-card { grid-template-columns: repeat(2, minmax(0, 1fr)); gap:8px; }
+        .treatment-option { appearance:none; width:100%; text-align:left; background:#FBFCFE; border:1px solid #DEE6F0; border-radius:10px; padding:9px 10px; cursor:pointer; transition:.18s ease; min-height:66px; position:relative; }
+        .treatment-option:hover { border-color:#A9C7F2; background:#F7FAFF; }
+        .treatment-option.selected { border-color:#0A57D5; background:#EEF5FF; box-shadow:0 0 0 2px #D9E9FF; }
+        .treatment-option.recommended::after { content:'Recomendado'; position:absolute; right:7px; top:7px; font-size:.58rem; font-weight:800; color:#715400; background:#FFF0B8; border-radius:999px; padding:2px 5px; }
+        .treatment-label { display:block; font-size:.68rem; color:#5B6A7E; padding-right:48px; }
+        .treatment-price { display:block; margin-top:5px; font-size:.93rem; font-weight:800; color:#063B8C; }
+        .selection-summary { display:none; align-items:center; gap:8px; margin-top:10px; background:#EAF9F2; border:1px solid #B7E8D2; color:#075A3D; border-radius:9px; padding:8px 10px; font-size:.75rem; font-weight:700; }
+        .selection-summary.visible { display:flex; }
+        .price-single-pair { text-align:left; display:flex; align-items:center; justify-content:space-between; gap:12px; }
+        .price-single-val { white-space:nowrap; }
+        .card-actions { margin-top:14px; }
+        .btn-select-ov { min-height:42px; }
+        .btn-select-ov:disabled { cursor:not-allowed; background:#AAB7C8; }
+        .btn-compare-check { min-height:42px; }
+        .products-heading { grid-column:1/-1; display:flex; align-items:end; justify-content:space-between; margin:2px 0 -2px; }
+        .products-heading h2 { font-size:1.15rem; letter-spacing:-.02em; color:#10233F; }
+        .products-heading p { font-size:.78rem; color:#6A788A; margin-top:2px; }
+        .products-heading .guide { font-size:.73rem; color:#24558E; background:#EEF5FF; border:1px solid #D4E6FF; border-radius:999px; padding:5px 9px; }
+        .ov-selected-box { background:linear-gradient(135deg,#EEF5FF,#F8FBFF); padding:14px; border-radius:10px; margin-bottom:14px; border:1px solid #CFE1FA; }
+        .ov-selected-box strong { color:#0046BE; }
+        .ov-selected-detail { display:block; margin-top:4px; color:#34455E; font-size:.82rem; }
+        @media (max-width: 760px) {
+            .stepper::before { display:none; }
+            .stepper { gap:6px; overflow-x:auto; justify-content:flex-start; }
+            .step-item { white-space:nowrap; }
+            .products-heading { align-items:flex-start; flex-direction:column; gap:7px; }
+            .price-grid-card { grid-template-columns:1fr; }
+            .card-actions { flex-direction:column; }
+        }
+
     </style>
 </head>
 <body>
@@ -187,8 +258,8 @@
         <!-- INDICADOR DE ETAPAS -->
         <div class="stepper">
             <div class="step-item active"><span class="step-num">1</span> Receita (OD / OE)</div>
-            <div class="step-item"><span class="step-num">2</span> Preferências & Filtros</div>
-            <div class="step-item"><span class="step-num">3</span> Recomendações & Comparador</div>
+            <div class="step-item"><span class="step-num">2</span> Perfil do Cliente</div>
+            <div class="step-item"><span class="step-num">3</span> Opções Recomendadas</div>
         </div>
 
         <!-- RECOMENDAÇÃO INTELIGENTE DA RECEITA -->
@@ -294,12 +365,12 @@
         <!-- FILTROS & ORDENAÇÃO -->
         <div class="card">
             <div class="card-header">
-                <div class="card-title"><i data-lucide="sliders" color="#0046BE"></i> Preferências & Filtros de Busca</div>
+                <div class="card-title"><i data-lucide="sliders" color="#0046BE"></i> Encontre a melhor opção</div>
             </div>
 
             <div class="filters-grid">
                 <div class="input-group search-box">
-                    <label>Buscar Lente / Código</label>
+                    <label>Buscar por lente ou código</label>
                     <input type="text" id="search" placeholder="Ex: Haytek, SP50PN, 1.59 Poli...">
                 </div>
                 <div class="input-group">
@@ -315,9 +386,9 @@
                     <select id="filterIndice"><option value="">Todos</option></select>
                 </div>
                 <div class="input-group">
-                    <label>Ordenar Por</label>
+                    <label>Organizar resultados</label>
                     <select id="sortBy">
-                        <option value="rec">Melhor Recomendação</option>
+                        <option value="rec">Melhor recomendação</option>
                         <option value="price-asc">Menor Preço</option>
                         <option value="price-desc">Maior Preço</option>
                         <option value="index-desc">Menor Espessura (Maior Índice)</option>
@@ -332,6 +403,13 @@
         </div>
 
         <!-- LISTA DE RESULTADOS (CARDS COMERCIAIS) -->
+        <div class="products-heading">
+            <div>
+                <h2>Opções recomendadas</h2>
+                <p>Apresente benefícios, escolha o tratamento e gere a OV com segurança.</p>
+            </div>
+            <span class="guide"><i data-lucide="mouse-pointer-click" size="14"></i> Selecione uma opção antes da OV</span>
+        </div>
         <div id="productsList" class="products-grid"></div>
         <div style="text-align:center; margin:24px 0; font-size:0.75rem; color:var(--text-muted);">Catálogo Haytek v1.0 • Base validada: 254 produtos</div>
 
@@ -366,8 +444,10 @@
             </h2>
             
             <form id="ovForm">
-                <div style="background: #F8FAFC; padding: 12px; border-radius: 8px; margin-bottom: 12px; border: 1px solid var(--border);">
-                    <strong style="color: var(--primary);">Lente Selecionada:</strong> <span id="ovSelectedLensName">--</span>
+                <div class="ov-selected-box">
+                    <strong>Lente selecionada para esta venda</strong>
+                    <span id="ovSelectedLensName" class="ov-selected-detail">--</span>
+                    <span id="ovSelectedTreatment" class="ov-selected-detail"></span>
                 </div>
 
                 <div class="ov-form-grid">
@@ -559,6 +639,8 @@
         // ESTADO GLOBAL
         let selectedForCompare = [];
         let currentSelectedLens = null;
+        let currentSelectedOption = null;
+        const selectedOptionByCode = {};
 
         // ELEMENTOS DOM
         const odEsf = document.getElementById('od_esf');
@@ -686,6 +768,30 @@
             return { suggestedIndices, tipoLente, reason };
         }
 
+
+        function getCommercialProfile(item) {
+            const family = (item.Família || '').toLowerCase();
+            if (family.includes('pro id') || family.includes('top')) {
+                return { tier: 'Premium', tierClass: 'tier-premium', kicker: 'Experiência premium', subtitle: 'Mais personalização, precisão e conforto visual para uma adaptação superior.', benefits: ['Campo visual mais confortável', 'Maior nível de personalização', 'Escolha ideal para clientes exigentes'] };
+            }
+            if (family.includes('smart') || family.includes('light')) {
+                return { tier: 'Melhor equilíbrio', tierClass: 'tier-balance', kicker: 'Custo-benefício inteligente', subtitle: 'Equilíbrio entre tecnologia, conforto e investimento.', benefits: ['Boa amplitude de visão', 'Conforto para a rotina', 'Excelente equilíbrio de valor'] };
+            }
+            if (family.includes('go') || item.Categoria === 'Lentes Prontas') {
+                return { tier: 'Essencial', tierClass: 'tier-essential', kicker: 'Solução prática', subtitle: 'Uma opção objetiva e confiável para as necessidades do dia a dia.', benefits: ['Compra simples e segura', 'Boa relação de investimento', 'Praticidade para uso diário'] };
+            }
+            return { tier: 'Solução indicada', tierClass: 'tier-balance', kicker: 'Escolha personalizada', subtitle: 'Tecnologia adequada ao perfil e à receita do cliente.', benefits: ['Conforto visual', 'Proteção para o dia a dia', 'Opção alinhada à receita'] };
+        }
+
+        function selectTreatment(code, label, price) {
+            selectedOptionByCode[code] = { label, price };
+            render();
+        }
+
+        function getSelectedOption(code) {
+            return selectedOptionByCode[code] || null;
+        }
+
         function render() {
             if (typeof rawData === 'undefined') return;
 
@@ -748,62 +854,74 @@
                 return;
             }
 
-            // Renderizar Cards
+            // Renderizar Cards com hierarquia comercial e seleção explícita
             productsList.innerHTML = filtered.map(item => {
                 const readyLens = isReadyLens(item);
                 const isSelectedForCompare = selectedForCompare.some(i => i.Código === item.Código);
-
-                // Tratamento de preços compostos por faixa cilíndrica
+                const selectedOption = getSelectedOption(item.Código);
+                const profile = getCommercialProfile(item);
                 const displayPrice = getCylinderPrice(item);
-
                 const pricesList = [
                     { label: 'Antirrisco', val: item['Antirrisco'] },
                     { label: 'Antirrisco Tingível', val: item['Antirrisco Tingível'] },
-                    { label: 'AR Verde', val: item['Antirreflexo Verde'] },
+                    { label: 'AR Verde', val: item['Antirreflexo Verde'], recommended: true },
                     { label: 'AR Azul', val: item['Antirreflexo Azul'] },
-                    { label: 'AR Prem. Verde', val: item['Antirreflexo Premium Verde'] },
-                    { label: 'AR Prem. Azul', val: item['Antirreflexo Premium Azul'] }
+                    { label: 'AR Premium Verde', val: item['Antirreflexo Premium Verde'] },
+                    { label: 'AR Premium Azul', val: item['Antirreflexo Premium Azul'] }
                 ].filter(p => p.val && p.val !== '');
-
+                const selectedCard = readyLens || selectedOption;
                 return `
-                    <div class="lens-card">
-                        <div class="lens-top">
-                            <div class="lens-badges">
-                                <span class="badge-cat">${item.Categoria}</span>
-                                ${item.Índice ? `<span class="badge-rec">Índice ${item.Índice}</span>` : ''}
-                                ${readyLens ? `<span class="badge-pair">Preço do Par</span>` : ''}
+                    <div class="lens-card ${selectedCard ? 'selected-product' : ''}">
+                        <div class="lens-card-inner">
+                            <div class="lens-top">
+                                <div class="lens-badges">
+                                    <span class="badge-cat">${item.Categoria}</span>
+                                    ${item.Índice ? `<span class="badge-rec">Índice ${item.Índice}</span>` : ''}
+                                    <span class="tier-badge ${profile.tierClass}">${profile.tier}</span>
+                                </div>
+                                <div class="commercial-kicker">${profile.kicker}</div>
+                                <div class="commercial-title">${item.Produto}</div>
+                                <div class="commercial-subtitle">${profile.subtitle}</div>
+                                <div class="benefits-list">
+                                    ${profile.benefits.map(b => `<div class="benefit-item"><i data-lucide="check" size="14"></i><span>${b}</span></div>`).join('')}
+                                </div>
+                                <details class="tech-details">
+                                    <summary>Ver detalhes técnicos <i data-lucide="chevron-down" size="14"></i></summary>
+                                    <div class="tech-content">
+                                        <div><strong>Código:</strong> ${item.Código}</div>
+                                        <div><strong>Família:</strong> ${item.Família || '—'}</div>
+                                        ${item.Disponibilidade ? `<div><strong>Grade:</strong> ${item.Disponibilidade}</div>` : ''}
+                                    </div>
+                                </details>
                             </div>
-                            <div class="lens-name">${item.Produto}</div>
-                            <div class="lens-code-fam">Cód: <strong>${item.Código}</strong> | Família: <strong>${item.Família}</strong></div>
-                            ${item.Disponibilidade ? `<div class="lens-grade"><strong>Grade:</strong> ${item.Disponibilidade}</div>` : ''}
-                        </div>
-
-                        <div class="price-section">
-                            ${readyLens ? `
-                                <div class="price-single-pair">
-                                    <div class="price-single-label">Valor Final do Par</div>
-                                    <div class="price-single-val">${displayPrice || 'Consulte'}</div>
-                                </div>
-                            ` : `
-                                <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-bottom: 4px;">Opções de Tratamento:</div>
-                                <div class="price-grid-card">
-                                    ${pricesList.map(p => `
-                                        <div class="price-box">
-                                            <span class="price-box-label">${p.label}</span>
-                                            <span class="price-box-val">${p.val}</span>
-                                        </div>
-                                    `).join('')}
-                                </div>
-                            `}
-                        </div>
-
-                        <div class="card-actions">
-                            <button class="btn-select-ov" onclick="openOVModal('${item.Código}')">
-                                <i data-lucide="file-plus" size="16"></i> Selecionar / OV
-                            </button>
-                            <button class="btn-compare-check ${isSelectedForCompare ? 'selected' : ''}" onclick="toggleCompare('${item.Código}')">
-                                <i data-lucide="${isSelectedForCompare ? 'check-square' : 'square'}" size="16"></i> Comparar
-                            </button>
+                            <div class="price-section">
+                                ${readyLens ? `
+                                    <div class="price-single-pair">
+                                        <div><div class="price-single-label">Valor final do par</div><small style="color:#4C6A5C">Opção pronta para gerar a OV</small></div>
+                                        <div class="price-single-val">${displayPrice || 'Consulte'}</div>
+                                    </div>
+                                    <div class="selection-summary visible"><i data-lucide="check-circle" size="16"></i> Produto definido para a OV</div>
+                                ` : `
+                                    <div class="treatment-title"><strong>Escolha o tratamento</strong><span>Uma opção por lente</span></div>
+                                    <div class="price-grid-card">
+                                        ${pricesList.map(p => `
+                                            <button type="button" class="treatment-option ${selectedOption && selectedOption.label === p.label ? 'selected' : ''} ${p.recommended ? 'recommended' : ''}" onclick="selectTreatment('${item.Código}', '${p.label.replace(/'/g,"\'")}', '${p.val.replace(/'/g,"\'")}')">
+                                                <span class="treatment-label">${p.label}</span>
+                                                <span class="treatment-price">${p.val}</span>
+                                            </button>
+                                        `).join('')}
+                                    </div>
+                                    <div class="selection-summary ${selectedOption ? 'visible' : ''}"><i data-lucide="check-circle" size="16"></i>${selectedOption ? `${selectedOption.label} selecionado para a OV` : ''}</div>
+                                `}
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn-select-ov" ${!readyLens && !selectedOption ? 'disabled' : ''} onclick="openOVModal('${item.Código}')">
+                                    <i data-lucide="file-check" size="16"></i> ${readyLens || selectedOption ? 'Gerar Ordem de Venda' : 'Escolha um tratamento'}
+                                </button>
+                                <button class="btn-compare-check ${isSelectedForCompare ? 'selected' : ''}" onclick="toggleCompare('${item.Código}')">
+                                    <i data-lucide="${isSelectedForCompare ? 'check-square' : 'square'}" size="16"></i> Comparar
+                                </button>
+                            </div>
                         </div>
                     </div>
                 `;
@@ -890,14 +1008,25 @@
             currentSelectedLens = rawData.find(i => i.Código === code);
             if (!currentSelectedLens) return;
 
-            document.getElementById('ovSelectedLensName').innerText = `${currentSelectedLens.Produto} (${currentSelectedLens.Código})`;
-            
-            const lensPrice = (isReadyLens(currentSelectedLens) ? getCylinderPrice(currentSelectedLens).replace(/<br>/g, ' | ') : '') || currentSelectedLens['Antirreflexo Verde'] || currentSelectedLens['Antirrisco'] || '0,00';
+            const readyLens = isReadyLens(currentSelectedLens);
+            currentSelectedOption = readyLens
+                ? { label: 'Produto / preço do par', price: getCylinderPrice(currentSelectedLens).replace(/<br>/g, ' | ') }
+                : getSelectedOption(code);
+
+            if (!currentSelectedOption) {
+                alert('Selecione uma opção de tratamento antes de gerar a Ordem de Venda.');
+                return;
+            }
+
+            document.getElementById('ovSelectedLensName').innerText = `${currentSelectedLens.Produto} — Cód. ${currentSelectedLens.Código}`;
+            document.getElementById('ovSelectedTreatment').innerText = `${currentSelectedOption.label}: ${currentSelectedOption.price}`;
+
+            const lensPrice = currentSelectedOption.price || '0,00';
             document.getElementById('ov_val_lente').value = lensPrice;
             document.getElementById('ov_val_total').value = lensPrice;
             document.getElementById('ov_val_restante').value = lensPrice;
-
             document.getElementById('ovModal').style.display = 'flex';
+            lucide.createIcons();
         }
 
         function closeOVModal() {
@@ -922,7 +1051,7 @@
             document.getElementById('prt_rua').innerText = document.getElementById('ov_cliente_rua').value || '';
             document.getElementById('prt_bairro').innerText = document.getElementById('ov_cliente_bairro').value || '';
 
-            document.getElementById('prt_lente_desc').innerText = currentSelectedLens ? currentSelectedLens.Produto : '';
+            document.getElementById('prt_lente_desc').innerText = currentSelectedLens ? `${currentSelectedLens.Produto} | Cód. ${currentSelectedLens.Código} | ${currentSelectedOption ? currentSelectedOption.label : ''}` : '';
             document.getElementById('prt_lente_val').innerText = document.getElementById('ov_val_lente').value || '';
             document.getElementById('prt_armacao_tipo').innerText = tipoArmacao.value || 'Padrão';
             document.getElementById('prt_armacao_val').innerText = document.getElementById('ov_val_armacao').value || '';
@@ -966,6 +1095,8 @@
             addInput.value = ''; dnpOD.value = ''; dnpOE.value = ''; altOD.value = ''; altOE.value = '';
             tipoArmacao.value = '';
             selectedForCompare = [];
+            Object.keys(selectedOptionByCode).forEach(k => delete selectedOptionByCode[k]);
+            currentSelectedOption = null;
             document.getElementById('compareBar').style.display = 'none';
             resetFilters();
         }
