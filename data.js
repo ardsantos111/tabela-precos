@@ -1,18 +1,229 @@
-const _p = {"s":["Lentes Surfaçadas","Haytek Pro ID","1.50","Esf. +6.00 a -9.00 / Cil. até -6.00 | Add. 1.00 a 3.50 / Diâm. 80 mm","1.56","Esf. +6.00 a -6.00 / Cil. até -6.00 | Add. 0.75 a 3.50 / Diâm. 80 mm","1.59","Esf. +6.00 a -8.00 / Cil. até -6.00 | Add. 0.75 a 3.50 / Diâm. 75 mm","Esf. +6.00 a -8.00 / Cil. até -6.00 | Add. 1.00 a 3.50 / Diâm. 75 mm","1.67","Esf. +6.00 a -10.00 / Cil. até -6.00 | Add. 0.75 a 3.50 / Diâm. 75 mm","1.74","Esf. +6.00 a -12.00 / Cil. até -6.00 | Add. 0.75 a 3.50 / Diâm. 75 mm","Haytek Top","Haytek Smart","Haytek Light","Haytek Go!","Haytek Drive","Haytek Office","Haytek Easy","Haytek Visão Simples ID","Esf. +6.00 a -9.00 / Cil. até -6.00 / Diâm. 80 mm","Esf. +6.00 a -6.00 / Cil. até -6.00 / Diâm. 80 mm","Esf. +6.00 a -8.00 / Cil. até -6.00 / Diâm. 75 mm","Esf. +6.00 a -10.00 / Cil. até -6.00 / Diâm. 75 mm","Esf. +6.00 a -12.00 / Cil. até -6.00 / Diâm. 75 mm","Haytek Visão Simples","Lentes Prontas","Visão Simples Prontas","1.5","Esf. -0.25 a -4.00 / Cil. até -2.00","Esf. Plano a -4.00 / Cil. até -2.00","Esf. -0.25 a -6.00 / Cil. até -2.00","Esf. +0.25 a +4.00 / Cil. até -2.00","Esf. +0.25 a +6.00 / Cil. até -2.00","Esf. Plano a -2.00 / Cil. até -2.00","Esf. Plano a -6.00 / Cil. até -2.00","Esf. Plano a -6.00 / Cil. até -4.00","Esf. -6.25 a -10.00 / Cil. até -2.00","Esf. +0.25 a +3.00 | Add. 1.00 a 3.00","Progressivas Prontas","Coloridas Prontas","Esf. Plano a -4.00 / Cil. até -2.00 | G-15 (Verde Escuro)","Esf. Plano a -4.00 / Cil. até -2.00 | Total 85% (Cinza Escuro)","Blocos Progressivos","Esf. Base 0.00 a 8.00 | Add. 1.00 a 3.50 / Diâm. 75 mm","Blocos Visão Simples","Base 0.00 a 8.00 / Diâm. 75 mm","Base 0.00 a 10.00 / Diâm. 75 mm","Base 0.00 a 8.00 / Diâm. 70 mm","Outros Produtos",""],
-"d":[[0,1,"SP50PN","Haytek Pro ID Freeform 1.50 Transitions Gen S Marrom",2,3,"R$ 4.751,84","R$ 4.831,84","R$ 5.151,84","R$ 5.231,84","R$ 5.631,84","R$ 5.711,84",48],[0,1,"SP50PD","Haytek Pro ID Freeform 1.50 Transitions Gen S Cinza",2,3,"R$ 4.751,84","R$ 4.831,84","R$ 5.151,84","R$ 5.231,84","R$ 5.631,84","R$ 5.711,84",48],[0,1,"SP56PT","Haytek Pro ID Freeform 1.56",4,5,"R$ 2.447,84","R$ 2.527,84","R$ 2.847,84","R$ 2.927,84","R$ 3.327,84","R$ 3.407,84",48],[0,1,"SP56PK","Haytek Pro ID Freeform 1.56 Filtro Azul",4,5,"R$ 2.807,84","R$ 2.887,84","R$ 3.207,84","R$ 3.287,84","R$ 3.687,84","R$ 3.767,84",48],[0,1,"SP56PY","Haytek Pro ID Freeform 1.56 Fotossensível",4,5,"R$ 3.311,84","R$ 3.391,84","R$ 3.711,84","R$ 3.791,84","R$ 4.191,84","R$ 4.271,84",48],[0,1,"SP56PF","Haytek Pro ID Freeform 1.56 Filtro Azul Fotossensível",4,5,"R$ 3.671,84","R$ 3.751,84","R$ 4.071,84","R$ 4.151,84","R$ 4.551,84","R$ 4.631,84",48],[0,1,"SP59PT","Haytek Pro ID Freeform 1.59 Poli",6,7,"R$ 2.807,84","R$ 2.887,84","R$ 3.207,84","R$ 3.287,84","R$ 3.687,84","R$ 3.767,84",48],[0,1,"SP59PK","Haytek Pro ID Freeform 1.59 Poli Filtro Azul",6,7,"R$ 3.167,84","R$ 3.247,84","R$ 3.567,84","R$ 3.647,84","R$ 4.047,84","R$ 4.127,84",48],[0,1,"SP59PY","Haytek Pro ID Freeform 1.59 Poli Fotossensível",6,7,"R$ 3.671,84","R$ 3.751,84","R$ 4.071,84","R$ 4.151,84","R$ 4.551,84","R$ 4.631,84",48],[0,1,"SP59PN","Haytek Pro ID Freeform 1.59 Poli Transitions Gen S Marrom",6,8,"R$ 5.111,84","R$ 5.191,84","R$ 5.511,84","R$ 5.591,84","R$ 5.991,84","R$ 6.071,84",48],[0,1,"SP59PD","Haytek Pro ID Freeform 1.59 Poli Transitions Gen S Cinza",6,8,"R$ 5.111,84","R$ 5.191,84","R$ 5.511,84","R$ 5.591,84","R$ 5.991,84","R$ 6.071,84",48],[0,1,"SP67PT","Haytek Pro ID Freeform 1.67",9,10,"R$ 4.103,84","R$ 4.183,84","R$ 4.503,84","R$ 4.583,84","R$ 4.983,84","R$ 5.063,84",48],[0,1,"SP67PK","Haytek Pro ID Freeform 1.67 Filtro Azul",9,10,"R$ 4.535,84","R$ 4.615,84","R$ 4.935,84","R$ 5.015,84","R$ 5.415,84","R$ 5.495,84",48],[0,1,"SP67PY","Haytek Pro ID Freeform 1.67 Fotossensível",9,10,"R$ 5.039,84","R$ 5.119,84","R$ 5.439,84","R$ 5.519,84","R$ 5.919,84","R$ 5.999,84",48],[0,1,"SP67PN","Haytek Pro ID Freeform 1.67 Transitions Gen S Marrom",9,10,"R$ 6.191,84","R$ 6.271,84","R$ 6.591,84","R$ 6.671,84","R$ 7.071,84","R$ 7.151,84",48],[0,1,"SP67PD","Haytek Pro ID Freeform 1.67 Transitions Gen S Cinza",9,10,"R$ 6.191,84","R$ 6.271,84","R$ 6.591,84","R$ 6.671,84","R$ 7.071,84","R$ 7.151,84",48],[0,1,"SP74PT","Haytek Pro ID Freeform 1.74",11,12,"R$ 5.255,84","R$ 5.335,84","R$ 5.655,84","R$ 5.735,84","R$ 6.135,84","R$ 6.215,84",48],[0,1,"SP74PK","Haytek Pro ID Freeform 1.74 Filtro Azul",11,12,"R$ 5.687,84","R$ 5.767,84","R$ 6.087,84","R$ 6.167,84","R$ 6.567,84","R$ 6.647,84",48],[0,1,"SP74PN","Haytek Pro ID Freeform 1.74 Transitions Gen S Marrom",11,12,"R$ 7.343,84","R$ 7.423,84","R$ 7.743,84","R$ 7.823,84","R$ 8.223,84","R$ 8.303,84",48],[0,1,"SP74PD","Haytek Pro ID Freeform 1.74 Transitions Gen S Cinza",11,12,"R$ 7.343,84","R$ 7.423,84","R$ 7.743,84","R$ 7.823,84","R$ 8.223,84","R$ 8.303,84",48],[0,13,"ST50PN","Haytek Top Freeform 1.50 Transitions Gen S Marrom",2,3,"R$ 3.815,84","R$ 3.895,84","R$ 4.215,84","R$ 4.295,84","R$ 4.695,84","R$ 4.775,84",48],[0,13,"ST50PD","Haytek Top Freeform 1.50 Transitions Gen S Cinza",2,3,"R$ 3.815,84","R$ 3.895,84","R$ 4.215,84","R$ 4.295,84","R$ 4.695,84","R$ 4.775,84",48],[0,13,"ST56PT","Haytek Top Freeform 1.56",4,5,"R$ 1.655,84","R$ 1.735,84","R$ 2.055,84","R$ 2.135,84","R$ 2.535,84","R$ 2.615,84",48],[0,13,"ST56PK","Haytek Top Freeform 1.56 Filtro Azul",4,5,"R$ 1.943,84","R$ 2.023,84","R$ 2.343,84","R$ 2.423,84","R$ 2.823,84","R$ 2.903,84",48],[0,13,"ST56PY","Haytek Top Freeform 1.56 Fotossensível",4,5,"R$ 2.375,84","R$ 2.455,84","R$ 2.775,84","R$ 2.855,84","R$ 3.255,84","R$ 3.335,84",48],[0,13,"ST56PF","Haytek Top Freeform 1.56 Filtro Azul Fotossensível",4,5,"R$ 2.663,84","R$ 2.743,84","R$ 3.063,84","R$ 3.143,84","R$ 3.543,84","R$ 3.623,84",48],[0,13,"ST59PT","Haytek Top Freeform 1.59 Poli",6,7,"R$ 1.943,84","R$ 2.023,84","R$ 2.343,84","R$ 2.423,84","R$ 2.823,84","R$ 2.903,84",48],[0,13,"ST59PK","Haytek Top Freeform 1.59 Poli Filtro Azul",6,7,"R$ 2.231,84","R$ 2.311,84","R$ 2.631,84","R$ 2.711,84","R$ 3.111,84","R$ 3.191,84",48],[0,13,"ST59PY","Haytek Top Freeform 1.59 Poli Fotossensível",6,7,"R$ 2.663,84","R$ 2.743,84","R$ 3.063,84","R$ 3.143,84","R$ 3.543,84","R$ 3.623,84",48],[0,13,"ST59PN","Haytek Top Freeform 1.59 Poli Transitions Gen S Marrom",6,8,"R$ 4.103,84","R$ 4.183,84","R$ 4.503,84","R$ 4.583,84","R$ 4.983,84","R$ 5.063,84",48],[0,13,"ST59PD","Haytek Top Freeform 1.59 Poli Transitions Gen S Cinza",6,8,"R$ 4.103,84","R$ 4.183,84","R$ 4.503,84","R$ 4.583,84","R$ 4.983,84","R$ 5.063,84",48],[0,13,"ST67PT","Haytek Top Freeform 1.67",9,10,"R$ 3.095,84","R$ 3.175,84","R$ 3.495,84","R$ 3.575,84","R$ 3.995,84","R$ 4.075,84",48],[0,13,"ST67PK","Haytek Top Freeform 1.67 Filtro Azul",9,10,"R$ 3.455,84","R$ 3.535,84","R$ 3.855,84","R$ 3.935,84","R$ 4.335,84","R$ 4.415,84",48],[0,13,"ST67PY","Haytek Top Freeform 1.67 Fotossensível",9,10,"R$ 3.887,84","R$ 3.967,84","R$ 4.287,84","R$ 4.367,84","R$ 4.767,84","R$ 4.847,84",48],[0,13,"ST67PN","Haytek Top Freeform 1.67 Transitions Gen S Marrom",9,10,"R$ 4.967,84","R$ 5.047,84","R$ 5.367,84","R$ 5.447,84","R$ 5.847,84","R$ 5.927,84",48],[0,13,"ST67PD","Haytek Top Freeform 1.67 Transitions Gen S Cinza",9,10,"R$ 4.967,84","R$ 5.047,84","R$ 5.367,84","R$ 5.447,84","R$ 5.847,84","R$ 5.927,84",48],[0,13,"ST74PT","Haytek Top Freeform 1.74",11,12,"R$ 4.103,84","R$ 4.183,84","R$ 4.503,84","R$ 4.583,84","R$ 4.983,84","R$ 5.063,84",48],[0,13,"ST74PK","Haytek Top Freeform 1.74 Filtro Azul",11,12,"R$ 4.463,84","R$ 4.543,84","R$ 4.863,84","R$ 4.943,84","R$ 5.343,84","R$ 5.423,84",48],[0,13,"ST74PN","Haytek Top Freeform 1.74 Transitions Gen S Marrom",11,12,"R$ 5.975,84","R$ 6.055,84","R$ 6.375,84","R$ 6.455,84","R$ 6.855,84","R$ 6.935,84",48],[0,13,"ST74PD","Haytek Top Freeform 1.74 Transitions Gen S Cinza",11,12,"R$ 5.975,84","R$ 6.055,84","R$ 6.375,84","R$ 6.455,84","R$ 6.855,84","R$ 6.935,84",48],[0,14,"SS50PN","Haytek Smart Freeform 1.50 Transitions Gen S Marrom",2,3,"R$ 2.951,84","R$ 3.031,84","R$ 3.351,84","R$ 3.431,84","R$ 3.831,84","R$ 3.911,84",48],[0,14,"SS50PD","Haytek Smart Freeform 1.50 Transitions Gen S Cinza",2,3,"R$ 2.951,84","R$ 3.031,84","R$ 3.351,84","R$ 3.431,84","R$ 3.831,84","R$ 3.911,84",48],[0,14,"SS56PT","Haytek Smart Freeform 1.56",4,5,"R$ 1.079,84","R$ 1.159,84","R$ 1.479,84","R$ 1.559,84","R$ 1.959,84","R$ 2.039,84",48],[0,14,"SS56PK","Haytek Smart Freeform 1.56 Filtro Azul",4,5,"R$ 1.367,84","R$ 1.447,84","R$ 1.767,84","R$ 1.847,84","R$ 2.247,84","R$ 2.327,84",48],[0,14,"SS56PY","Haytek Smart Freeform 1.56 Fotossensível",4,5,"R$ 1.799,84","R$ 1.879,84","R$ 2.199,84","R$ 2.279,84","R$ 2.679,84","R$ 2.759,84",48],[0,14,"SS56PF","Haytek Smart Freeform 1.56 Filtro Azul Fotossensível",4,5,"R$ 2.087,84","R$ 2.167,84","R$ 2.487,84","R$ 2.567,84","R$ 2.967,84","R$ 3.047,84",48],[0,14,"SS59PT","Haytek Smart Freeform 1.59 Poli",6,7,"R$ 1.367,84","R$ 1.447,84","R$ 1.767,84","R$ 1.847,84","R$ 2.247,84","R$ 2.327,84",48],[0,14,"SS59PK","Haytek Smart Freeform 1.59 Poli Filtro Azul",6,7,"R$ 1.655,84","R$ 1.735,84","R$ 2.055,84","R$ 2.055,84","R$ 2.535,84","R$ 2.615,84",48],[0,14,"SS59PY","Haytek Smart Freeform 1.59 Poli Fotossensível",6,7,"R$ 2.087,84","R$ 2.167,84","R$ 2.487,84","R$ 2.567,84","R$ 2.967,84","R$ 3.047,84",48],[0,14,"SS59PN","Haytek Smart Freeform 1.59 Poli Transitions Gen S Marrom",6,8,"R$ 3.239,84","R$ 3.319,84","R$ 3.639,84","R$ 3.719,84","R$ 4.119,84","R$ 4.199,84",48],[0,14,"SS59PD","Haytek Smart Freeform 1.59 Poli Transitions Gen S Cinza",6,8,"R$ 3.239,84","R$ 3.319,84","R$ 3.639,84","R$ 3.719,84","R$ 4.119,84","R$ 4.199,84",48],[0,14,"SS67PT","Haytek Smart Freeform 1.67",9,10,"R$ 2.375,84","R$ 2.455,84","R$ 2.775,84","R$ 2.855,84","R$ 3.255,84","R$ 3.335,84",48],[0,14,"SS67PK","Haytek Smart Freeform 1.67 Filtro Azul",9,10,"R$ 2.735,84","R$ 2.815,84","R$ 3.135,84","R$ 3.215,84","R$ 3.615,84","R$ 3.695,84",48],[0,14,"SS67PY","Haytek Smart Freeform 1.67 Fotossensível",9,10,"R$ 3.167,84","R$ 3.247,84","R$ 3.567,84","R$ 3.647,84","R$ 4.047,84","R$ 4.127,84",48],[0,14,"SS67PN","Haytek Smart Freeform 1.67 Transitions Gen S Marrom",9,10,"R$ 4.103,84","R$ 4.183,84","R$ 4.503,84","R$ 4.583,84","R$ 4.983,84","R$ 5.063,84",48],[0,14,"SS67PD","Haytek Smart Freeform 1.67 Transitions Gen S Cinza",9,10,"R$ 4.103,84","R$ 4.183,84","R$ 4.503,84","R$ 4.583,84","R$ 4.983,84","R$ 5.063,84",48],[0,14,"SS74PT","Haytek Smart Freeform 1.74",11,12,"R$ 3.239,84","R$ 3.319,84","R$ 3.639,84","R$ 3.719,84","R$ 4.119,84","R$ 4.199,84",48],[0,14,"SS74PK","Haytek Smart Freeform 1.74 Filtro Azul",11,12,"R$ 3.599,84","R$ 3.679,84","R$ 3.999,84","R$ 4.079,84","R$ 4.479,84","R$ 4.559,84",48],[0,14,"SS74PN","Haytek Smart Freeform 1.74 Transitions Gen S Marrom",11,12,"R$ 4.967,84","R$ 5.047,84","R$ 5.367,84","R$ 5.447,84","R$ 5.847,84","R$ 5.927,84",48],[0,14,"SS74PD","Haytek Smart Freeform 1.74 Transitions Gen S Cinza",11,12,"R$ 4.967,84","R$ 5.047,84","R$ 5.367,84","R$ 5.447,84","R$ 5.847,84","R$ 5.927,84",48],[0,15,"SL50PN","Haytek Light Freeform 1.50 Transitions Gen S Marrom",2,3,"R$ 2.447,84","R$ 2.527,84","R$ 2.847,84","R$ 2.927,84","R$ 3.327,84","R$ 3.407,84",48],[0,15,"SL50PD","Haytek Light Freeform 1.50 Transitions Gen S Cinza",2,3,"R$ 2.447,84","R$ 2.527,84","R$ 2.847,84","R$ 2.927,84","R$ 3.327,84","R$ 3.407,84",48],[0,15,"SL56PT","Haytek Light Freeform 1.56",4,5,"R$ 719,84","R$ 799,84","R$ 1.119,84","R$ 1.199,84","R$ 1.599,84","R$ 1.679,84",48],[0,15,"SL56PK","Haytek Light Freeform 1.56 Filtro Azul",4,5,"R$ 935,84","R$ 1.015,84","R$ 1.335,84","R$ 1.415,84","R$ 1.815,84","R$ 1.895,84",48],[0,15,"SL56PY","Haytek Light Freeform 1.56 Fotossensível",4,5,"R$ 1.295,84","R$ 1.375,84","R$ 1.695,84","R$ 1.775,84","R$ 2.175,84","R$ 2.255,84",48],[0,15,"SL56PF","Haytek Light Freeform 1.56 Filtro Azul Fotossensível",4,5,"R$ 1.511,84","R$ 1.591,84","R$ 1.911,84","R$ 1.991,84","R$ 2.391,84","R$ 2.471,84",48],[0,15,"SL59PT","Haytek Light Freeform 1.59 Poli",6,7,"R$ 935,84","R$ 1.015,84","R$ 1.335,84","R$ 1.415,84","R$ 1.815,84","R$ 1.895,84",48],[0,15,"SL59PK","Haytek Light Freeform 1.59 Poli Filtro Azul",6,7,"R$ 1.151,84","R$ 1.231,84","R$ 1.551,84","R$ 1.631,84","R$ 2.031,84","R$ 2.111,84",48],[0,15,"SL59PY","Haytek Light Freeform 1.59 Poli Fotossensível",6,7,"R$ 1.511,84","R$ 1.591,84","R$ 1.911,84","R$ 1.991,84","R$ 2.391,84","R$ 2.471,84",48],[0,15,"SL59PN","Haytek Light Freeform 1.59 Poli Transitions Gen S Marrom",6,8,"R$ 2.735,84","R$ 2.815,84","R$ 3.135,84","R$ 3.215,84","R$ 3.615,84","R$ 3.695,84",48],[0,15,"SL59PD","Haytek Light Freeform 1.59 Poli Transitions Gen S Cinza",6,8,"R$ 2.735,84","R$ 2.815,84","R$ 3.135,84","R$ 3.215,84","R$ 3.615,84","R$ 3.695,84",48],[0,15,"SL67PT","Haytek Light Freeform 1.67",9,10,"R$ 1.871,84","R$ 1.951,84","R$ 2.271,84","R$ 2.351,84","R$ 2.751,84","R$ 2.831,84",48],[0,15,"SL67PK","Haytek Light Freeform 1.67 Filtro Azul",9,10,"R$ 2.159,84","R$ 2.239,84","R$ 2.559,84","R$ 2.639,84","R$ 3.039,84","R$ 3.119,84",48],[0,15,"SL67PY","Haytek Light Freeform 1.67 Fotossensível",9,10,"R$ 2.519,84","R$ 2.599,84","R$ 2.919,84","R$ 2.999,84","R$ 3.399,84","R$ 3.479,84",48],[0,15,"SL67PN","Haytek Light Freeform 1.67 Transitions Gen S Marrom",9,10,"R$ 3.455,84","R$ 3.535,84","R$ 3.855,84","R$ 3.935,84","R$ 4.335,84","R$ 4.415,84",48],[0,15,"SL67PD","Haytek Light Freeform 1.67 Transitions Gen S Cinza",9,10,"R$ 3.455,84","R$ 3.535,84","R$ 3.855,84","R$ 3.935,84","R$ 4.335,84","R$ 4.415,84",48],[0,15,"SL74PT","Haytek Light Freeform 1.74",11,12,"R$ 2.591,84","R$ 2.671,84","R$ 2.991,84","R$ 3.071,84","R$ 3.471,84","R$ 3.551,84",48],[0,15,"SL74PK","Haytek Light Freeform 1.74 Filtro Azul",11,12,"R$ 2.879,84","R$ 2.959,84","R$ 3.279,84","R$ 3.359,84","R$ 3.759,84","R$ 3.839,84",48],[0,15,"SL74PN","Haytek Light Freeform 1.74 Transitions Gen S Marrom",11,12,"R$ 4.247,84","R$ 4.327,84","R$ 4.647,84","R$ 4.727,84","R$ 5.127,84","R$ 5.207,84",48],[0,15,"SL74PD","Haytek Light Freeform 1.74 Transitions Gen S Cinza",11,12,"R$ 4.247,84","R$ 4.327,84","R$ 4.647,84","R$ 4.727,84","R$ 5.127,84","R$ 5.207,84",48],[0,16,"SG50PN","Haytek Go! Freeform 1.50 Transitions Gen S Marrom",2,3,"R$ 2.231,84","R$ 2.311,84","R$ 2.631,84","R$ 2.711,84","R$ 3.111,84","R$ 3.191,84",48],[0,16,"SG50PD","Haytek Go! Freeform 1.50 Transitions Gen S Cinza",2,3,"R$ 2.231,84","R$ 2.311,84","R$ 2.631,84","R$ 2.711,84","R$ 3.111,84","R$ 3.191,84",48],[0,16,"SG56PT","Haytek Go! Freeform 1.56",4,5,"R$ 575,84","R$ 655,84","R$ 975,84","R$ 1.055,84","R$ 1.455,84","R$ 1.535,84",48],[0,16,"SG56PK","Haytek Go! Freeform 1.56 Filtro Azul",4,5,"R$ 755,84","R$ 835,84","R$ 1.155,84","R$ 1.235,84","R$ 1.635,84","R$ 1.715,84",48],[0,16,"SG56PY","Haytek Go! Freeform 1.56 Fotossensível",4,5,"R$ 1.079,84","R$ 1.159,84","R$ 1.479,84","R$ 1.559,84","R$ 1.959,84","R$ 2.039,84",48],[0,16,"SG56PF","Haytek Go! Freeform 1.56 Filtro Azul Fotossensível",4,5,"R$ 1.259,84","R$ 1.339,84","R$ 1.659,84","R$ 1.739,84","R$ 2.139,84","R$ 2.219,84",48],[0,16,"SG59PT","Haytek Go! Freeform 1.59 Poli",6,7,"R$ 755,84","R$ 835,84","R$ 1.155,84","R$ 1.235,84","R$ 1.635,84","R$ 1.715,84",48],[0,16,"SG59PK","Haytek Go! Freeform 1.59 Poli Filtro Azul",6,7,"R$ 935,84","R$ 1.015,84","R$ 1.335,84","R$ 1.415,84","R$ 1.815,84","R$ 1.895,84",48],[0,16,"SG59PY","Haytek Go! Freeform 1.59 Poli Fotossensível",6,7,"R$ 1.259,84","R$ 1.339,84","R$ 1.659,84","R$ 1.739,84","R$ 2.139,84","R$ 2.219,84",48],[0,16,"SG59PN","Haytek Go! Freeform 1.59 Poli Transitions Gen S Marrom",6,8,"R$ 2.375,84","R$ 2.455,84","R$ 2.775,84","R$ 2.855,84","R$ 3.255,84","R$ 3.335,84",48],[0,16,"SG59PD","Haytek Go! Freeform 1.59 Poli Transitions Gen S Cinza",6,8,"R$ 2.375,84","R$ 2.455,84","R$ 2.775,84","R$ 2.855,84","R$ 3.255,84","R$ 3.335,84",48],[0,16,"SG67PT","Haytek Go! Freeform 1.67",9,10,"R$ 1.583,84","R$ 1.663,84","R$ 1.983,84","R$ 2.063,84","R$ 2.463,84","R$ 2.543,84",48],[0,16,"SG67PK","Haytek Go! Freeform 1.67 Filtro Azul",9,10,"R$ 1.835,84","R$ 1.915,84","R$ 2.235,84","R$ 2.315,84","R$ 2.715,84","R$ 2.795,84",48],[0,16,"SG67PY","Haytek Go! Freeform 1.67 Fotossensível",9,10,"R$ 2.159,84","R$ 2.239,84","R$ 2.559,84","R$ 2.639,84","R$ 3.039,84","R$ 3.119,84",48],[0,16,"SG67PN","Haytek Go! Freeform 1.67 Transitions Gen S Marrom",9,10,"R$ 2.951,84","R$ 3.031,84","R$ 3.351,84","R$ 3.431,84","R$ 3.831,84","R$ 3.911,84",48],[0,16,"SG67PD","Haytek Go! Freeform 1.67 Transitions Gen S Cinza",9,10,"R$ 2.951,84","R$ 3.031,84","R$ 3.351,84","R$ 3.431,84","R$ 3.831,84","R$ 3.911,84",48],[0,16,"SG74PT","Haytek Go! Freeform 1.74",11,12,"R$ 2.231,84","R$ 2.311,84","R$ 2.631,84","R$ 2.711,84","R$ 3.111,84","R$ 3.191,84",48],[0,16,"SG74PK","Haytek Go! Freeform 1.74 Filtro Azul",11,12,"R$ 2.483,84","R$ 2.563,84","R$ 2.883,84","R$ 2.963,84","R$ 3.363,84","R$ 3.443,84",48],[0,16,"SG74PN","Haytek Go! Freeform 1.74 Transitions Gen S Marrom",11,12,"R$ 3.599,84","R$ 3.679,84","R$ 3.999,84","R$ 4.079,84","R$ 4.479,84","R$ 4.559,84",48],[0,16,"SG74PD","Haytek Go! Freeform 1.74 Transitions Gen S Cinza",11,12,"R$ 3.599,84","R$ 3.679,84","R$ 3.999,84","R$ 4.079,84","R$ 4.479,84","R$ 4.559,84",48],[0,17,"SD50PN","Haytek Drive Freeform 1.50 Transitions Gen S Marrom",2,3,"R$ 3.815,84","R$ 3.895,84","R$ 4.215,84","R$ 4.295,84","R$ 4.695,84","R$ 4.775,84",48],[0,17,"SD50PD","Haytek Drive Freeform 1.50 Transitions Gen S Cinza",2,3,"R$ 3.815,84","R$ 3.895,84","R$ 4.215,84","R$ 4.295,84","R$ 4.695,84","R$ 4.775,84",48],[0,17,"SD56PT","Haytek Drive Freeform 1.56",4,5,"R$ 1.655,84","R$ 1.735,84","R$ 2.055,84","R$ 2.135,84","R$ 2.535,84","R$ 2.615,84",48],[0,17,"SD56PK","Haytek Drive Freeform 1.56 Filtro Azul",4,5,"R$ 1.943,84","R$ 2.023,84","R$ 2.343,84","R$ 2.423,84","R$ 2.823,84","R$ 2.903,84",48],[0,17,"SD56PY","Haytek Drive Freeform 1.56 Fotossensível",4,5,"R$ 2.375,84","R$ 2.455,84","R$ 2.775,84","R$ 2.855,84","R$ 3.255,84","R$ 3.335,84",48],[0,17,"SD56PF","Haytek Drive Freeform 1.56 Filtro Azul Fotossensível",4,5,"R$ 2.663,84","R$ 2.743,84","R$ 3.063,84","R$ 3.143,84","R$ 3.543,84","R$ 3.623,84",48],[0,17,"SD59PT","Haytek Drive Freeform 1.59 Poli",6,7,"R$ 1.943,84","R$ 2.023,84","R$ 2.343,84","R$ 2.423,84","R$ 2.823,84","R$ 2.903,84",48],[0,17,"SD59PK","Haytek Drive Freeform 1.59 Poli Filtro Azul",6,7,"R$ 2.231,84","R$ 2.311,84","R$ 2.631,84","R$ 2.711,84","R$ 3.111,84","R$ 3.191,84",48],[0,17,"SD59PY","Haytek Drive Freeform 1.59 Poli Fotossensível",6,7,"R$ 2.663,84","R$ 2.743,84","R$ 3.063,84","R$ 3.143,84","R$ 3.543,84","R$ 3.623,84",48],[0,17,"SD59PN","Haytek Drive Freeform 1.59 Poli Transitions Gen S Marrom",6,8,"R$ 4.103,84","R$ 4.183,84","R$ 4.503,84","R$ 4.583,84","R$ 4.983,84","R$ 5.063,84",48],[0,17,"SD59PD","Haytek Drive Freeform 1.59 Poli Transitions Gen S Cinza",6,8,"R$ 4.103,84","R$ 4.183,84","R$ 4.503,84","R$ 4.583,84","R$ 4.983,84","R$ 5.063,84",48],[0,17,"SD67PT","Haytek Drive Freeform 1.67",9,10,"R$ 3.095,84","R$ 3.175,84","R$ 3.495,84","R$ 3.575,84","R$ 3.995,84","R$ 4.075,84",48],[0,17,"SD67PK","Haytek Drive Freeform 1.67 Filtro Azul",9,10,"R$ 3.455,84","R$ 3.535,84","R$ 3.855,84","R$ 3.935,84","R$ 4.335,84","R$ 4.415,84",48],[0,17,"SD67PY","Haytek Drive Freeform 1.67 Fotossensível",9,10,"R$ 3.887,84","R$ 3.967,84","R$ 4.287,84","R$ 4.367,84","R$ 4.767,84","R$ 4.847,84",48],[0,17,"SD67PN","Haytek Drive Freeform 1.67 Transitions Gen S Marrom",9,10,"R$ 4.967,84","R$ 5.047,84","R$ 5.367,84","R$ 5.447,84","R$ 5.847,84","R$ 5.927,84",48],[0,17,"SD67PD","Haytek Drive Freeform 1.67 Transitions Gen S Cinza",9,10,"R$ 4.967,84","R$ 5.047,84","R$ 5.367,84","R$ 5.447,84","R$ 5.847,84","R$ 5.927,84",48],[0,17,"SD74PT","Haytek Drive Freeform 1.74",11,12,"R$ 4.103,84","R$ 4.183,84","R$ 4.503,84","R$ 4.583,84","R$ 4.983,84","R$ 5.063,84",48],[0,17,"SD74PK","Haytek Drive Freeform 1.74 Filtro Azul",11,12,"R$ 4.463,84","R$ 4.543,84","R$ 4.863,84","R$ 4.943,84","R$ 5.343,84","R$ 5.423,84",48],[0,17,"SD74PN","Haytek Drive Freeform 1.74 Transitions Gen S Marrom",11,12,"R$ 5.975,84","R$ 6.055,84","R$ 6.375,84","R$ 6.455,84","R$ 6.855,84","R$ 6.935,84",48],[0,17,"SD74PD","Haytek Drive Freeform 1.74 Transitions Gen S Cinza",11,12,"R$ 5.975,84","R$ 6.055,84","R$ 6.375,84","R$ 6.455,84","R$ 6.855,84","R$ 6.935,84",48],[0,18,"SO50PN","Haytek Office Freeform 1.50 Transitions Gen S Marrom",2,3,"R$ 2.447,84","R$ 2.527,84","R$ 2.847,84","R$ 2.927,84","R$ 3.327,84","R$ 3.407,84",48],[0,18,"SO50PD","Haytek Office Freeform 1.50 Transitions Gen S Cinza",2,3,"R$ 2.447,84","R$ 2.527,84","R$ 2.847,84","R$ 2.927,84","R$ 3.327,84","R$ 3.407,84",48],[0,18,"SO56PT","Haytek Office Freeform 1.56",4,5,"R$ 719,84","R$ 799,84","R$ 1.119,84","R$ 1.199,84","R$ 1.599,84","R$ 1.679,84",48],[0,18,"SO56PK","Haytek Office Freeform 1.56 Filtro Azul",4,5,"R$ 935,84","R$ 1.015,84","R$ 1.335,84","R$ 1.415,84","R$ 1.815,84","R$ 1.895,84",48],[0,18,"SO56PY","Haytek Office Freeform 1.56 Fotossensível",4,5,"R$ 1.295,84","R$ 1.375,84","R$ 1.695,84","R$ 1.775,84","R$ 2.175,84","R$ 2.255,84",48],[0,18,"SO56PF","Haytek Office Freeform 1.56 Filtro Azul Fotossensível",4,5,"R$ 1.511,84","R$ 1.591,84","R$ 1.911,84","R$ 1.991,84","R$ 2.391,84","R$ 2.471,84",48],[0,18,"SO59PT","Haytek Office Freeform 1.59 Poli",6,7,"R$ 935,84","R$ 1.015,84","R$ 1.335,84","R$ 1.415,84","R$ 1.815,84","R$ 1.895,84",48],[0,18,"SO59PK","Haytek Office Freeform 1.59 Poli Filtro Azul",6,7,"R$ 1.151,84","R$ 1.231,84","R$ 1.551,84","R$ 1.631,84","R$ 2.031,84","R$ 2.111,84",48],[0,18,"SO59PY","Haytek Office Freeform 1.59 Poli Fotossensível",6,7,"R$ 1.511,84","R$ 1.591,84","R$ 1.911,84","R$ 1.991,84","R$ 2.391,84","R$ 2.471,84",48],[0,18,"SO59PN","Haytek Office Freeform 1.59 Poli Transitions Gen S Marrom",6,8,"R$ 2.735,84","R$ 2.815,84","R$ 3.135,84","R$ 3.215,84","R$ 3.615,84","R$ 3.695,84",48],[0,18,"SO59PD","Haytek Office Freeform 1.59 Poli Transitions Gen S Cinza",6,8,"R$ 2.735,84","R$ 2.815,84","R$ 3.135,84","R$ 3.215,84","R$ 3.615,84","R$ 3.695,84",48],[0,18,"SO67PT","Haytek Office Freeform 1.67",9,10,"R$ 1.871,84","R$ 1.951,84","R$ 2.271,84","R$ 2.351,84","R$ 2.751,84","R$ 2.831,84",48],[0,18,"SO67PK","Haytek Office Freeform 1.67 Filtro Azul",9,10,"R$ 2.159,84","R$ 2.239,84","R$ 2.559,84","R$ 2.639,84","R$ 3.039,84","R$ 3.119,84",48],[0,18,"SO67PY","Haytek Office Freeform 1.67 Fotossensível",9,10,"R$ 2.519,84","R$ 2.599,84","R$ 2.919,84","R$ 2.999,84","R$ 3.399,84","R$ 3.479,84",48],[0,18,"SO67PN","Haytek Office Freeform 1.67 Transitions Gen S Marrom",9,10,"R$ 3.455,84","R$ 3.535,84","R$ 3.855,84","R$ 3.935,84","R$ 4.335,84","R$ 4.415,84",48],[0,18,"SO67PD","Haytek Office Freeform 1.67 Transitions Gen S Cinza",9,10,"R$ 3.455,84","R$ 3.535,84","R$ 3.855,84","R$ 3.935,84","R$ 4.335,84","R$ 4.415,84",48],[0,18,"SO74PT","Haytek Office Freeform 1.74",11,12,"R$ 2.591,84","R$ 2.671,84","R$ 2.991,84","R$ 3.071,84","R$ 3.471,84","R$ 3.551,84",48],[0,18,"SO74PK","Haytek Office Freeform 1.74 Filtro Azul",11,12,"R$ 2.879,84","R$ 2.959,84","R$ 3.279,84","R$ 3.359,84","R$ 3.759,84","R$ 3.839,84",48],[0,18,"SO74PN","Haytek Office Freeform 1.74 Transitions Gen S Marrom",11,12,"R$ 4.247,84","R$ 4.327,84","R$ 4.647,84","R$ 4.727,84","R$ 5.127,84","R$ 5.207,84",48],[0,18,"SO74PD","Haytek Office Freeform 1.74 Transitions Gen S Cinza",11,12,"R$ 4.247,84","R$ 4.327,84","R$ 4.647,84","R$ 4.727,84","R$ 5.127,84","R$ 5.207,84",48],[0,19,"SE50PN","Haytek Easy Freeform 1.50 Transitions Gen S Marrom",2,3,"R$ 2.015,84","R$ 2.095,84","R$ 2.415,84","R$ 2.495,84","R$ 2.895,84","R$ 2.975,84",48],[0,19,"SE50PD","Haytek Easy Freeform 1.50 Transitions Gen S Cinza",2,3,"R$ 2.015,84","R$ 2.095,84","R$ 2.415,84","R$ 2.495,84","R$ 2.895,84","R$ 2.975,84",48],[0,19,"SE56PT","Haytek Easy Freeform 1.56",4,5,"R$ 431,84","R$ 511,84","R$ 831,84","R$ 911,84","R$ 1.311,84","R$ 1.391,84",48],[0,19,"SE56PK","Haytek Easy Freeform 1.56 Filtro Azul",4,5,"R$ 611,84","R$ 691,84","R$ 1.011,84","R$ 1.091,84","R$ 1.491,84","R$ 1.571,84",48],[0,19,"SE56PY","Haytek Easy Freeform 1.56 Fotossensível",4,5,"R$ 935,84","R$ 1.015,84","R$ 1.335,84","R$ 1.415,84","R$ 1.815,84","R$ 1.895,84",48],[0,19,"SE56PF","Haytek Easy Freeform 1.56 Filtro Azul Fotossensível",4,5,"R$ 1.115,84","R$ 1.195,84","R$ 1.515,84","R$ 1.595,84","R$ 1.995,84","R$ 2.075,84",48],[0,19,"SE59PT","Haytek Easy Freeform 1.59 Poli",6,7,"R$ 611,84","R$ 691,84","R$ 1.011,84","R$ 1.091,84","R$ 1.491,84","R$ 1.571,84",48],[0,19,"SE59PK","Haytek Easy Freeform 1.59 Poli Filtro Azul",6,7,"R$ 791,84","R$ 871,84","R$ 1.191,84","R$ 1.271,84","R$ 1.671,84","R$ 1.751,84",48],[0,19,"SE59PY","Haytek Easy Freeform 1.59 Poli Fotossensível",6,7,"R$ 1.115,84","R$ 1.195,84","R$ 1.515,84","R$ 1.595,84","R$ 1.995,84","R$ 2.075,84",48],[0,19,"SE59PN","Haytek Easy Freeform 1.59 Poli Transitions Gen S Marrom",6,8,"R$ 2.159,84","R$ 2.239,84","R$ 2.559,84","R$ 2.639,84","R$ 3.039,84","R$ 3.119,84",48],[0,19,"SE59PD","Haytek Easy Freeform 1.59 Poli Transitions Gen S Cinza",6,8,"R$ 2.159,84","R$ 2.239,84","R$ 2.559,84","R$ 2.639,84","R$ 3.039,84","R$ 3.119,84",48],[0,19,"SE67PT","Haytek Easy Freeform 1.67",9,10,"R$ 1.367,84","R$ 1.447,84","R$ 1.767,84","R$ 1.847,84","R$ 2.247,84","R$ 2.327,84",48],[0,19,"SE67PK","Haytek Easy Freeform 1.67 Filtro Azul",9,10,"R$ 1.619,84","R$ 1.699,84","R$ 2.019,84","R$ 2.099,84","R$ 2.499,84","R$ 2.579,84",48],[0,19,"SE67PY","Haytek Easy Freeform 1.67 Fotossensível",9,10,"R$ 1.943,84","R$ 2.023,84","R$ 2.343,84","R$ 2.423,84","R$ 2.823,84","R$ 2.903,84",48],[0,19,"SE67PN","Haytek Easy Freeform 1.67 Transitions Gen S Marrom",9,10,"R$ 2.735,84","R$ 2.815,84","R$ 3.135,84","R$ 3.215,84","R$ 3.615,84","R$ 3.695,84",48],[0,19,"SE67PD","Haytek Easy Freeform 1.67 Transitions Gen S Cinza",9,10,"R$ 2.735,84","R$ 2.815,84","R$ 3.135,84","R$ 3.215,84","R$ 3.615,84","R$ 3.695,84",48],[0,19,"SE74PT","Haytek Easy Freeform 1.74",11,12,"R$ 2.015,84","R$ 2.095,84","R$ 2.415,84","R$ 2.495,84","R$ 2.895,84","R$ 2.975,84",48],[0,19,"SE74PK","Haytek Easy Freeform 1.74 Filtro Azul",11,12,"R$ 2.267,84","R$ 2.347,84","R$ 2.667,84","R$ 2.747,84","R$ 3.147,84","R$ 3.227,84",48],[0,19,"SE74PN","Haytek Easy Freeform 1.74 Transitions Gen S Marrom",11,12,"R$ 3.383,84","R$ 3.463,84","R$ 3.783,84","R$ 3.863,84","R$ 4.263,84","R$ 4.343,84",48],[0,19,"SE74PD","Haytek Easy Freeform 1.74 Transitions Gen S Cinza",11,12,"R$ 3.383,84","R$ 3.463,84","R$ 3.783,84","R$ 3.863,84","R$ 4.263,84","R$ 4.343,84",48],[0,20,"SV50PN","Haytek Visão Simples ID Freeform 1.50 Transitions Gen S Marrom",2,21,"R$ 2.447,84","R$ 2.527,84","R$ 2.847,84","R$ 2.927,84","R$ 3.327,84","R$ 3.407,84",48],[0,20,"SV50PD","Haytek Visão Simples ID Freeform 1.50 Transitions Gen S Cinza",2,21,"R$ 2.447,84","R$ 2.527,84","R$ 2.847,84","R$ 2.927,84","R$ 3.327,84","R$ 3.407,84",48],[0,20,"SV56PT","Haytek Visão Simples ID Freeform 1.56",4,22,"R$ 719,84","R$ 799,84","R$ 1.119,84","R$ 1.199,84","R$ 1.599,84","R$ 1.679,84",48],[0,20,"SV56PK","Haytek Visão Simples ID Freeform 1.56 Filtro Azul",4,22,"R$ 935,84","R$ 1.015,84","R$ 1.335,84","R$ 1.415,84","R$ 1.815,84","R$ 1.895,84",48],[0,20,"SV56PY","Haytek Visão Simples ID Freeform 1.56 Fotossensível",4,22,"R$ 1.295,84","R$ 1.375,84","R$ 1.695,84","R$ 1.775,84","R$ 2.175,84","R$ 2.255,84",48],[0,20,"SV56PF","Haytek Visão Simples ID Freeform 1.56 Filtro Azul Fotossensível",4,22,"R$ 1.511,84","R$ 1.591,84","R$ 1.911,84","R$ 1.991,84","R$ 2.391,84","R$ 2.471,84",48],[0,20,"SV59PT","Haytek Visão Simples ID Freeform 1.59 Poli",6,23,"R$ 935,84","R$ 1.015,84","R$ 1.335,84","R$ 1.415,84","R$ 1.815,84","R$ 1.895,84",48],[0,20,"SV59PK","Haytek Visão Simples ID Freeform 1.59 Poli Filtro Azul",6,23,"R$ 1.151,84","R$ 1.231,84","R$ 1.551,84","R$ 1.631,84","R$ 2.031,84","R$ 2.111,84",48],[0,20,"SV59PY","Haytek Visão Simples ID Freeform 1.59 Poli Fotossensível",6,23,"R$ 1.511,84","R$ 1.591,84","R$ 1.911,84","R$ 1.991,84","R$ 2.391,84","R$ 2.471,84",48],[0,20,"SV59PN","Haytek Visão Simples ID Freeform 1.59 Poli Transitions Gen S Marrom",6,23,"R$ 2.735,84","R$ 2.815,84","R$ 3.135,84","R$ 3.215,84","R$ 3.615,84","R$ 3.695,84",48],[0,20,"SV59PD","Haytek Visão Simples ID Freeform 1.59 Poli Transitions Gen S Cinza",6,23,"R$ 2.735,84","R$ 2.815,84","R$ 3.135,84","R$ 3.215,84","R$ 3.615,84","R$ 3.695,84",48],[0,20,"SV67PT","Haytek Visão Simples ID Freeform 1.67",9,24,"R$ 1.871,84","R$ 1.951,84","R$ 2.271,84","R$ 2.351,84","R$ 2.751,84","R$ 2.831,84",48],[0,20,"SV67PK","Haytek Visão Simples ID Freeform 1.67 Filtro Azul",9,24,"R$ 2.159,84","R$ 2.239,84","R$ 2.559,84","R$ 2.639,84","R$ 3.039,84","R$ 3.119,84",48],[0,20,"SV67PY","Haytek Visão Simples ID Freeform 1.67 Fotossensível",9,24,"R$ 2.519,84","R$ 2.599,84","R$ 2.919,84","R$ 2.999,84","R$ 3.399,84","R$ 3.479,84",48],[0,20,"SV67PN","Haytek Visão Simples ID Freeform 1.67 Transitions Gen S Marrom",9,24,"R$ 3.455,84","R$ 3.535,84","R$ 3.855,84","R$ 3.935,84","R$ 4.335,84","R$ 4.415,84",48],[0,20,"SV67PD","Haytek Visão Simples ID Freeform 1.67 Transitions Gen S Cinza",9,24,"R$ 3.455,84","R$ 3.535,84","R$ 3.855,84","R$ 3.935,84","R$ 4.335,84","R$ 4.415,84",48],[0,20,"SV74PT","Haytek Visão Simples ID Freeform 1.74",11,25,"R$ 2.591,84","R$ 2.671,84","R$ 2.991,84","R$ 3.071,84","R$ 3.471,84","R$ 3.551,84",48],[0,20,"SV74PK","Haytek Visão Simples ID Freeform 1.74 Filtro Azul",11,25,"R$ 2.879,84","R$ 2.959,84","R$ 3.279,84","R$ 3.359,84","R$ 3.759,84","R$ 3.839,84",48],[0,20,"SV74PN","Haytek Visão Simples ID Freeform 1.74 Transitions Gen S Marrom",11,25,"R$ 4.247,84","R$ 4.327,84","R$ 4.647,84","R$ 4.727,84","R$ 5.127,84","R$ 5.207,84",48],[0,20,"SV74PD","Haytek Visão Simples ID Freeform 1.74 Transitions Gen S Cinza",11,25,"R$ 4.247,84","R$ 4.327,84","R$ 4.647,84","R$ 4.727,84","R$ 5.127,84","R$ 5.207,84",48],[0,26,"S050PN","Haytek Visão Simples 1.50 Transitions Gen S Marrom",2,21,"R$ 2.015,84","R$ 2.095,84","R$ 2.415,84","R$ 2.495,84","R$ 2.895,84","R$ 2.975,84",48],[0,26,"S050PD","Haytek Visão Simples 1.50 Transitions Gen S Cinza",2,21,"R$ 2.015,84","R$ 2.095,84","R$ 2.415,84","R$ 2.495,84","R$ 2.895,84","R$ 2.975,84",48],[0,26,"S056PT","Haytek Visão Simples 1.56",4,22,"R$ 431,84","R$ 511,84","R$ 831,84","R$ 911,84","R$ 1.311,84","R$ 1.391,84",48],[0,26,"S056PK","Haytek Visão Simples 1.56 Filtro Azul",4,22,"R$ 611,84","R$ 691,84","R$ 1.011,84","R$ 1.091,84","R$ 1.491,84","R$ 1.571,84",48],[0,26,"S056PY","Haytek Visão Simples 1.56 Fotossensível",4,22,"R$ 935,84","R$ 1.015,84","R$ 1.335,84","R$ 1.415,84","R$ 1.815,84","R$ 1.895,84",48],[0,26,"S056PF","Haytek Visão Simples 1.56 Filtro Azul Fotossensível",4,22,"R$ 1.115,84","R$ 1.195,84","R$ 1.515,84","R$ 1.595,84","R$ 1.995,84","R$ 2.075,84",48],[0,26,"S059PT","Haytek Visão Simples 1.59 Poli",6,23,"R$ 611,84","R$ 691,84","R$ 1.011,84","R$ 1.091,84","R$ 1.491,84","R$ 1.571,84",48],[0,26,"S059PK","Haytek Visão Simples 1.59 Poli Filtro Azul",6,23,"R$ 791,84","R$ 871,84","R$ 1.191,84","R$ 1.271,84","R$ 1.671,84","R$ 1.751,84",48],[0,26,"S059PY","Haytek Visão Simples 1.59 Poli Fotossensível",6,23,"R$ 1.115,84","R$ 1.195,84","R$ 1.515,84","R$ 1.595,84","R$ 1.995,84","R$ 2.075,84",48],[0,26,"S059PN","Haytek Visão Simples 1.59 Poli Transitions Gen S Marrom",6,23,"R$ 2.159,84","R$ 2.239,84","R$ 2.559,84","R$ 2.639,84","R$ 3.039,84","R$ 3.119,84",48],[0,26,"S059PD","Haytek Visão Simples 1.59 Poli Transitions Gen S Cinza",6,23,"R$ 2.159,84","R$ 2.239,84","R$ 2.559,84","R$ 2.639,84","R$ 3.039,84","R$ 3.119,84",48],[0,26,"S067PT","Haytek Visão Simples 1.67",9,24,"R$ 1.367,84","R$ 1.447,84","R$ 1.767,84","R$ 1.847,84","R$ 2.247,84","R$ 2.327,84",48],[0,26,"S067PK","Haytek Visão Simples 1.67 Filtro Azul",9,24,"R$ 1.619,84","R$ 1.699,84","R$ 2.019,84","R$ 2.099,84","R$ 2.499,84","R$ 2.579,84",48],[0,26,"S067PY","Haytek Visão Simples 1.67 Fotossensível",9,24,"R$ 1.943,84","R$ 2.023,84","R$ 2.343,84","R$ 2.423,84","R$ 2.823,84","R$ 2.903,84",48],[0,26,"S067PN","Haytek Visão Simples 1.67 Transitions Gen S Marrom",9,24,"R$ 2.735,84","R$ 2.815,84","R$ 3.135,84","R$ 3.215,84","R$ 3.615,84","R$ 3.695,84",48],[0,26,"S067PD","Haytek Visão Simples 1.67 Transitions Gen S Cinza",9,24,"R$ 2.735,84","R$ 2.815,84","R$ 3.135,84","R$ 3.215,84","R$ 3.615,84","R$ 3.695,84",48],[0,26,"S074PT","Haytek Visão Simples 1.74",11,25,"R$ 2.015,84","R$ 2.095,84","R$ 2.415,84","R$ 2.495,84","R$ 2.895,84","R$ 2.975,84",48],[0,26,"S074PK","Haytek Visão Simples 1.74 Filtro Azul",11,25,"R$ 2.267,84","R$ 2.267,84","R$ 2.667,84","R$ 2.747,84","R$ 3.147,84","R$ 3.227,84",48],[0,26,"S074PN","Haytek Visão Simples 1.74 Transitions Gen S Marrom",11,25,"R$ 3.383,84","R$ 3.463,84","R$ 3.783,84","R$ 3.863,84","R$ 4.263,84","R$ 4.343,84",48],[0,26,"S074PD","Haytek Visão Simples 1.74 Transitions Gen S Cinza",11,25,"R$ 3.383,84","R$ 3.463,84","R$ 3.783,84","R$ 3.863,84","R$ 4.263,84","R$ 4.343,84",48],[27,28,"PT5011","Pronta 1.50 Incolor Antirreflexo Verde",29,30,48,48,48,48,48,48,"R$ 280,00"],[27,28,"PT5012","Pronta 1.50 Filtro Azul Antirreflexo Azul",29,31,48,48,48,48,48,48,"R$ 360,00"],[27,28,"PT5013","Pronta 1.50 Fotossensível Incolor Antirreflexo Verde",29,30,48,48,48,48,48,48,"R$ 600,00"],[27,28,"PT5014","Pronta 1.50 Fotossensível Filtro Azul AR Azul",29,31,48,48,48,48,48,48,"R$ 760,00"],[27,28,"PT5015","Pronta 1.50 Incolor Antirrisco Tingível",29,30,48,48,48,48,48,48,"R$ 152,00"],[27,28,"PT5611","Pronta 1.56 Incolor Antirreflexo Verde",4,32,48,48,48,48,48,48,"R$ 312,00"],[27,28,"PT5612","Pronta 1.56 Filtro Azul Antirreflexo Azul",4,32,48,48,48,48,48,48,"R$ 400,00"],[27,28,"PT5613","Pronta 1.56 Fotossensível Incolor Antirreflexo Verde",4,30,48,48,48,48,48,48,"R$ 712,00"],[27,28,"PT5614","Pronta 1.56 Fotossensível Filtro Azul AR Azul",4,32,48,48,48,48,48,48,"R$ 920,00"],[27,28,"PT5615","Pronta 1.56 Incolor Antirrisco Tingível",4,30,48,48,48,48,48,48,"R$ 192,00"],[27,28,"PT5911","Pronta 1.59 Poli Incolor Antirreflexo Verde",6,33,48,48,48,48,48,48,"R$ 384,00"],[27,28,"PT5912","Pronta 1.59 Poli Filtro Azul Antirreflexo Azul",6,33,48,48,48,48,48,48,"R$ 472,00"],[27,28,"PT5913","Pronta 1.59 Poli Fotossensível Incolor Antirreflexo Verde",6,30,48,48,48,48,48,48,"R$ 880,00"],[27,28,"PT5914","Pronta 1.59 Poli Fotossensível Filtro Azul AR Azul",6,33,48,48,48,48,48,48,"R$ 1.112,00"],[27,28,"PT5915","Pronta 1.59 Poli Incolor Antirrisco Tingível",6,30,48,48,48,48,48,48,"R$ 256,00"],[27,28,"PT6711","Pronta 1.67 Incolor Antirreflexo Verde",9,34,48,48,48,48,48,48,"R$ 880,00"],[27,28,"PT6712","Pronta 1.67 Filtro Azul Antirreflexo Azul",9,35,48,48,48,48,48,48,"R$ 1.040,00"],[27,28,"PT6713","Pronta 1.67 Fotossensível Incolor Antirreflexo Verde",9,36,48,48,48,48,48,48,"R$ 1.512,00"],[27,28,"PT6714","Pronta 1.67 Fotossensível Filtro Azul AR Azul",9,36,48,48,48,48,48,48,"R$ 1.760,00"],[27,28,"PT6715","Pronta 1.67 Incolor Antirrisco",9,36,48,48,48,48,48,48,"R$ 640,00"],[27,28,"PT7411","Pronta 1.74 Incolor Antirreflexo Verde",11,37,48,48,48,48,48,48,"R$ 1.512,00"],[27,28,"PT7412","Pronta 1.74 Filtro Azul Antirreflexo Azul",11,37,48,48,48,48,48,48,"R$ 1.760,00"],[27,38,"PR5011","Progressiva Pronta 1.50 Incolor Antirreflexo Verde",2,39,48,48,48,48,48,48,"R$ 712,00"],[27,38,"PR5012","Progressiva Pronta 1.50 Filtro Azul AR Azul",2,39,48,48,48,48,48,48,"R$ 880,00"],[27,38,"PR5013","Progressiva Pronta 1.50 Fotossensível Incolor AR Verde",2,39,48,48,48,48,48,48,"R$ 1.200,00"],[27,38,"PR5611","Progressiva Pronta 1.56 Incolor Antirreflexo Verde",4,39,48,48,48,48,48,48,"R$ 800,00"],[27,38,"PR5612","Progressiva Pronta 1.56 Filtro Azul AR Azul",4,39,48,48,48,48,48,48,"R$ 960,00"],[27,40,"CL5011","Pronta 1.50 Total G-15 (Verde Escuro) Antirrisco Tingível",2,41,48,48,48,48,48,48,"R$ 312,00"],[27,40,"CL5012","Pronta 1.50 Total Cinza Escuro Antirrisco Tingível",2,42,48,48,48,48,48,48,"R$ 312,00"],[27,43,"BL5011","Bloco Progressivo 1.50 Incolor",2,44,48,48,48,48,48,48,"R$ 472,00"],[27,43,"BL5012","Bloco Progressivo 1.50 Fotossensível Incolor",2,44,48,48,48,48,48,48,"R$ 960,00"],[27,43,"BL5611","Bloco Progressivo 1.56 Incolor",4,44,48,48,48,48,48,48,"R$ 520,00"],[27,43,"BL5612","Bloco Progressivo 1.56 Filtro Azul",4,44,48,48,48,48,48,48,"R$ 640,00"],[27,43,"BL5613","Bloco Progressivo 1.56 Fotossensível Incolor",4,44,48,48,48,48,48,48,"R$ 1.040,00"],[27,43,"BL5911","Bloco Progressivo 1.59 Poli Incolor",6,44,48,48,48,48,48,48,"R$ 600,00"],[27,45,"BS5011","Bloco Visão Simples 1.50 Incolor",2,46,48,48,48,48,48,48,"R$ 200,00"],[27,45,"BS5012","Bloco Visão Simples 1.50 Transitions Gen S Marrom",2,46,48,48,48,48,48,48,"R$ 1.512,00"],[27,45,"BS5013","Bloco Visão Simples 1.50 Transitions Gen S Cinza",2,46,48,48,48,48,48,48,"R$ 1.512,00"],[27,45,"BS5611","Bloco Visão Simples 1.56 Incolor",4,46,48,48,48,48,48,48,"R$ 232,00"],[27,45,"BS5612","Bloco Visão Simples 1.56 Filtro Azul",4,46,48,48,48,48,48,48,"R$ 312,00"],[27,45,"BS5613","Bloco Visão Simples 1.56 Fotossensível Incolor",4,46,48,48,48,48,48,48,"R$ 560,00"],[27,45,"BS5614","Bloco Visão Simples 1.56 Filtro Azul Fotossensível",4,46,48,48,48,48,48,48,"R$ 720,00"],[27,45,"BS5911","Bloco Visão Simples 1.59 Poli Incolor",6,46,48,48,48,48,48,48,"R$ 280,00"],[27,45,"BS5912","Bloco Visão Simples 1.59 Poli Filtro Azul",6,46,48,48,48,48,48,48,"R$ 360,00"],[27,45,"BS5913","Bloco Visão Simples 1.59 Poli Fotossensível Incolor",6,46,48,48,48,48,48,48,"R$ 640,00"],[27,45,"BS5914","Bloco Visão Simples 1.59 Poli Transitions Gen S Marrom",6,46,48,48,48,48,48,48,"R$ 1.760,00"],[27,45,"BS5915","Bloco Visão Simples 1.59 Poli Transitions Gen S Cinza",6,46,48,48,48,48,48,48,"R$ 1.760,00"],[27,45,"BS6711","Bloco Visão Simples 1.67 Incolor",9,47,48,48,48,48,48,48,"R$ 800,00"],[27,45,"BS6712","Bloco Visão Simples 1.67 Filtro Azul",9,47,48,48,48,48,48,48,"R$ 960,00"],[27,45,"BS6713","Bloco Visão Simples 1.67 Fotossensível Incolor",9,47,48,48,48,48,48,48,"R$ 1.360,00"],[27,45,"BS7411","Bloco Visão Simples 1.74 Incolor",11,47,48,48,48,48,48,48,"R$ 1.280,00"],[27,45,"BS7412","Bloco Visão Simples 1.74 Filtro Azul",11,47,48,48,48,48,48,48,"R$ 1.440,00"],[27,28,"FS59AH","Haytek Visão Simples Acabada 1.59 Poli Antirrisco Tingível",6,30,48,48,48,48,48,48,"R$ 90,40 | R$ 215,20"],[27,28,"FS59AA","Haytek Visão Simples Acabada 1.59 Poli com Antirreflexo Residual Verde",6,30,48,48,48,48,48,48,"R$ 98,40 | R$ 227,20"],[27,28,"FS59EB","Haytek Visão Simples Acabada 1.59 Poli Filtro Azul com Antirreflexo Residual Verde",6,30,48,48,48,48,48,48,"R$ 162,88 | R$ 277,28"],[27,28,"FS59BB","Haytek Visão Simples Acabada 1.59 Poli Filtro Azul com Antirreflexo Residual Azul",6,30,48,48,48,48,48,48,"R$ 162,88 | R$ 277,28"],[27,28,"FS59EP","Haytek Visão Simples Acabada 1.59 Poli Fotossensível com Antirreflexo Residual Verde",6,30,48,48,48,48,48,48,"R$ 509,44 | R$ 799,20"],[27,28,"FS59PB","Haytek Visão Simples Acabada 1.59 Poli Filtro Azul Fotossensível com Antirreflexo Residual Azul",6,30,48,48,48,48,48,48,"R$ 959,20 | R$ 1.519,20"],[47,47,"UT000101","Box de Coloração Haytek",48,48,48,48,48,48,48,48,"R$ 3.992,00"],[47,47,"UT000102","Coloração de Lentes Haytek (Par)",48,48,48,48,48,48,48,48,"R$ 120,00"]]};
+/**
+ * CATÁLOGO ÓPTICO HAYTEK
+ * Versão: 1.0.2
+ *
+ * Fonte oficial dos produtos e preços:
+ * tabela-fonte.csv
+ *
+ * Os três arquivos devem estar na mesma pasta:
+ * - index.html
+ * - data.js
+ * - tabela-fonte.csv
+ */
 
-const rawData = _p.d.map(r => ({
-    "Categoria": _p.s[r[0]],
-    "Família": _p.s[r[1]],
-    "Código": r[2],
-    "Produto": r[3],
-    "Índice": _p.s[r[4]],
-    "Disponibilidade": _p.s[r[5]],
-    "Antirrisco": r[6],
-    "Antirrisco Tingível": r[7],
-    "Antirreflexo Verde": r[8],
-    "Antirreflexo Azul": r[9],
-    "Antirreflexo Premium Verde": r[10],
-    "Antirreflexo Premium Azul": r[11],
-    "Preço Base/Grade": r[12]
-}));
+const catalogMeta = {
+  appVersion: "1.0.2",
+  sourceFile: "tabela-fonte.csv",
+  schemaVersion: "1.0",
+  generatedAt: new Date().toISOString()
+};
+
+/**
+ * Corrige possíveis caracteres invisíveis e espaços extras.
+ */
+function limparTexto(valor) {
+  return String(valor ?? "")
+    .replace(/^\uFEFF/, "")
+    .replace(/\u00A0/g, " ")
+    .trim();
+}
+
+/**
+ * Faz a leitura de uma linha CSV separada por ponto e vírgula.
+ *
+ * Também reconhece campos entre aspas.
+ */
+function separarLinhaCsv(linha) {
+  const campos = [];
+  let campoAtual = "";
+  let dentroDeAspas = false;
+
+  for (let i = 0; i < linha.length; i += 1) {
+    const caractere = linha[i];
+    const proximoCaractere = linha[i + 1];
+
+    if (caractere === '"') {
+      if (dentroDeAspas && proximoCaractere === '"') {
+        campoAtual += '"';
+        i += 1;
+      } else {
+        dentroDeAspas = !dentroDeAspas;
+      }
+
+      continue;
+    }
+
+    if (caractere === ";" && !dentroDeAspas) {
+      campos.push(limparTexto(campoAtual));
+      campoAtual = "";
+      continue;
+    }
+
+    campoAtual += caractere;
+  }
+
+  campos.push(limparTexto(campoAtual));
+
+  return campos;
+}
+
+/**
+ * Converte o conteúdo da planilha CSV em objetos.
+ */
+function converterCsvParaCatalogo(csvTexto) {
+  const linhas = String(csvTexto ?? "")
+    .replace(/^\uFEFF/, "")
+    .replace(/\r\n/g, "\n")
+    .replace(/\r/g, "\n")
+    .split("\n")
+    .filter((linha) => linha.trim() !== "");
+
+  if (linhas.length < 2) {
+    throw new Error(
+      "A tabela-fonte.csv não possui produtos ou está vazia."
+    );
+  }
+
+  const cabecalhos = separarLinhaCsv(linhas[0]);
+
+  const cabecalhosObrigatorios = [
+    "Categoria",
+    "Família",
+    "Código",
+    "Produto",
+    "Índice",
+    "Disponibilidade",
+    "Antirrisco",
+    "Antirrisco Tingível",
+    "Antirreflexo Verde",
+    "Antirreflexo Azul",
+    "Antirreflexo Premium Verde",
+    "Antirreflexo Premium Azul",
+    "Preço Base/Grade"
+  ];
+
+  const cabecalhosAusentes = cabecalhosObrigatorios.filter(
+    (cabecalho) => !cabecalhos.includes(cabecalho)
+  );
+
+  if (cabecalhosAusentes.length > 0) {
+    throw new Error(
+      `Colunas obrigatórias ausentes: ${cabecalhosAusentes.join(", ")}`
+    );
+  }
+
+  const produtos = [];
+  const codigosEncontrados = new Set();
+
+  linhas.slice(1).forEach((linha, indice) => {
+    const numeroLinha = indice + 2;
+    const valores = separarLinhaCsv(linha);
+    const produto = {};
+
+    cabecalhos.forEach((cabecalho, coluna) => {
+      produto[cabecalho] = limparTexto(valores[coluna]);
+    });
+
+    const codigo = produto["Código"];
+
+    if (!codigo) {
+      console.warn(
+        `Linha ${numeroLinha} ignorada porque não possui código.`
+      );
+
+      return;
+    }
+
+    if (codigosEncontrados.has(codigo)) {
+      console.warn(
+        `Código duplicado ignorado na linha ${numeroLinha}: ${codigo}`
+      );
+
+      return;
+    }
+
+    codigosEncontrados.add(codigo);
+    produtos.push(produto);
+  });
+
+  if (produtos.length === 0) {
+    throw new Error(
+      "Nenhum produto válido foi encontrado na tabela-fonte.csv."
+    );
+  }
+
+  return produtos;
+}
+
+/**
+ * Carrega o CSV de forma síncrona.
+ *
+ * Isso garante que rawData esteja disponível antes de o index.html
+ * executar a inicialização do aplicativo.
+ */
+function carregarCatalogoHaytek() {
+  const requisicao = new XMLHttpRequest();
+
+  requisicao.open(
+    "GET",
+    `tabela-fonte.csv?v=${Date.now()}`,
+    false
+  );
+
+  requisicao.overrideMimeType(
+    "text/csv; charset=utf-8"
+  );
+
+  try {
+    requisicao.send(null);
+  } catch (erro) {
+    console.error(
+      "Falha ao solicitar tabela-fonte.csv:",
+      erro
+    );
+
+    return [];
+  }
+
+  const carregamentoValido =
+    requisicao.status === 200 ||
+    requisicao.status === 0;
+
+  if (!carregamentoValido) {
+    console.error(
+      `Não foi possível carregar tabela-fonte.csv. Status: ${requisicao.status}`
+    );
+
+    return [];
+  }
+
+  try {
+    return converterCsvParaCatalogo(
+      requisicao.responseText
+    );
+  } catch (erro) {
+    console.error(
+      "Erro ao processar tabela-fonte.csv:",
+      erro
+    );
+
+    return [];
+  }
+}
+
+/**
+ * Base utilizada pelo index.html.
+ */
+const rawData = carregarCatalogoHaytek();
+
+catalogMeta.productCount = rawData.length;
+
+if (rawData.length === 0) {
+  console.error(
+    "O catálogo não foi carregado. Verifique se tabela-fonte.csv está na mesma pasta do data.js."
+  );
+} else {
+  console.info(
+    `Catálogo Haytek carregado com ${rawData.length} produtos.`
+  );
+}
