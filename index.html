@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sugestão de Lentes & Catálogo Óptico</title>
+    <title>Sugestão de Lentes & Catálogo Óptico — v1.0</title>
     <!-- Google Fonts Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -333,6 +333,7 @@
 
         <!-- LISTA DE RESULTADOS (CARDS COMERCIAIS) -->
         <div id="productsList" class="products-grid"></div>
+        <div style="text-align:center; margin:24px 0; font-size:0.75rem; color:var(--text-muted);">Catálogo Haytek v1.0 • Base validada: 254 produtos</div>
 
     </div>
 
@@ -583,24 +584,77 @@
         const productsList = document.getElementById('productsList');
         const smartRecBox = document.getElementById('smartRecBox');
 
+        function isReadyLens(item) {
+            return item.Categoria === 'Lentes Prontas' || item.Categoria === 'Outros Produtos';
+        }
+
+        function parseMoneyBR(value) {
+            if (!value || typeof value !== 'string') return 0;
+            const first = value.split('|')[0].trim();
+            const normalized = first.replace(/R\$\s?/g, '').replace(/\./g, '').replace(',', '.');
+            return Number.parseFloat(normalized) || 0;
+        }
+
+        function getCylinderPrice(item) {
+            const basePrice = item['Preço Base/Grade'] || '';
+            if (!basePrice.includes('|')) return basePrice;
+
+            const parts = basePrice.split('|').map(p => p.trim()).filter(Boolean);
+            const cylinderValues = [odCil.value, oeCil.value]
+                .filter(v => v !== '')
+                .map(v => Number.parseFloat(v))
+                .filter(Number.isFinite);
+
+            if (cylinderValues.length === 0) {
+                return parts.map((p, i) => i === 0
+                    ? `${p} (Cil. até -2,00)`
+                    : `${p} (Cil. -2,25 a -4,00)`
+                ).join('<br>');
+            }
+
+            const worstCylinder = Math.min(...cylinderValues);
+            return worstCylinder <= -2.25 && parts[1]
+                ? `${parts[1]} (Cil. -2,25 a -4,00)`
+                : `${parts[0]} (Cil. até -2,00)`;
+        }
+
+        function updateFamilyOptions() {
+            const selectedCategory = catSelect.value;
+            const currentFamily = famSelect.value;
+            const families = [...new Set(rawData
+                .filter(item => !selectedCategory || item.Categoria === selectedCategory)
+                .map(item => item.Família)
+                .filter(Boolean))]
+                .sort((a, b) => a.localeCompare(b, 'pt-BR'));
+
+            famSelect.innerHTML = '<option value="">Todas</option>';
+            families.forEach(f => famSelect.add(new Option(f, f)));
+            famSelect.value = families.includes(currentFamily) ? currentFamily : '';
+        }
+
         function initApp() {
             if (typeof rawData === 'undefined') {
                 resultsCount.innerText = "⚠️ O arquivo data.js não foi encontrado no repositório.";
                 return;
             }
 
-            // Popular Dropdowns
-            const categorias = [...new Set(rawData.map(i => i.Categoria).filter(Boolean))];
-            const familias = [...new Set(rawData.map(i => i.Família).filter(Boolean))];
-            const indices = [...new Set(rawData.map(i => i.Índice).filter(Boolean))].sort();
+            // Popular Dropdowns a partir da base oficial
+            const categorias = [...new Set(rawData.map(i => i.Categoria).filter(Boolean))]
+                .sort((a, b) => a.localeCompare(b, 'pt-BR'));
+            const indices = [...new Set(rawData.map(i => i.Índice).filter(Boolean))]
+                .sort((a, b) => (parseFloat(a) || 0) - (parseFloat(b) || 0));
 
             categorias.forEach(c => catSelect.add(new Option(c, c)));
-            familias.forEach(f => famSelect.add(new Option(f, f)));
             indices.forEach(i => indSelect.add(new Option(i, i)));
+            updateFamilyOptions();
 
             // Event Listeners
-            [odEsf, odCil, odEixo, oeEsf, oeCil, oeEixo, addInput, searchInput, catSelect, famSelect, indSelect, sortBySelect].forEach(el => {
+            [odEsf, odCil, odEixo, oeEsf, oeCil, oeEixo, addInput, searchInput, famSelect, indSelect, sortBySelect].forEach(el => {
                 el.addEventListener('input', render);
+            });
+            catSelect.addEventListener('change', () => {
+                updateFamilyOptions();
+                render();
             });
 
             // Set Data Hoje
@@ -696,20 +750,11 @@
 
             // Renderizar Cards
             productsList.innerHTML = filtered.map(item => {
-                const isReadyLens = item.Categoria === 'Lentes Prontas' || item['Preço Base/Grade'] !== '';
+                const readyLens = isReadyLens(item);
                 const isSelectedForCompare = selectedForCompare.some(i => i.Código === item.Código);
 
-                // Tratamento de preços compostos ($ vs $$) baseados no CIL do cliente
-                let displayPrice = item['Preço Base/Grade'];
-                if (displayPrice && displayPrice.includes('|')) {
-                    const priceParts = displayPrice.split('|').map(p => p.trim());
-                    const worstCil = Math.min(cilOD, cilOE);
-                    if (worstCil <= -2.25 && priceParts[1]) {
-                        displayPrice = `${priceParts[1]} (Cil. -2,25 a -4,00)`;
-                    } else if ((odCil.value !== '' || oeCil.value !== '') && worstCil > -2.25 && priceParts[0]) {
-                        displayPrice = `${priceParts[0]} (Cil. até -2,00)`;
-                    }
-                }
+                // Tratamento de preços compostos por faixa cilíndrica
+                const displayPrice = getCylinderPrice(item);
 
                 const pricesList = [
                     { label: 'Antirrisco', val: item['Antirrisco'] },
@@ -726,7 +771,7 @@
                             <div class="lens-badges">
                                 <span class="badge-cat">${item.Categoria}</span>
                                 ${item.Índice ? `<span class="badge-rec">Índice ${item.Índice}</span>` : ''}
-                                ${isReadyLens ? `<span class="badge-pair">Preço do Par</span>` : ''}
+                                ${readyLens ? `<span class="badge-pair">Preço do Par</span>` : ''}
                             </div>
                             <div class="lens-name">${item.Produto}</div>
                             <div class="lens-code-fam">Cód: <strong>${item.Código}</strong> | Família: <strong>${item.Família}</strong></div>
@@ -734,7 +779,7 @@
                         </div>
 
                         <div class="price-section">
-                            ${isReadyLens ? `
+                            ${readyLens ? `
                                 <div class="price-single-pair">
                                     <div class="price-single-label">Valor Final do Par</div>
                                     <div class="price-single-val">${displayPrice || 'Consulte'}</div>
@@ -769,8 +814,7 @@
 
         function getPriceVal(item) {
             const valStr = item['Preço Base/Grade'] || item['Antirreflexo Verde'] || item['Antirrisco'] || '0';
-            const clean = valStr.replace('R$', '').replace('.', '').replace(',', '.').split('|')[0].trim();
-            return parseFloat(clean) || 0;
+            return parseMoneyBR(valStr);
         }
 
         /* COMPARAÇÃO DE LENTES */
@@ -848,7 +892,7 @@
 
             document.getElementById('ovSelectedLensName').innerText = `${currentSelectedLens.Produto} (${currentSelectedLens.Código})`;
             
-            const lensPrice = currentSelectedLens['Preço Base/Grade'] || currentSelectedLens['Antirreflexo Verde'] || currentSelectedLens['Antirrisco'] || '0,00';
+            const lensPrice = (isReadyLens(currentSelectedLens) ? getCylinderPrice(currentSelectedLens).replace(/<br>/g, ' | ') : '') || currentSelectedLens['Antirreflexo Verde'] || currentSelectedLens['Antirrisco'] || '0,00';
             document.getElementById('ov_val_lente').value = lensPrice;
             document.getElementById('ov_val_total').value = lensPrice;
             document.getElementById('ov_val_restante').value = lensPrice;
@@ -909,6 +953,7 @@
         function resetFilters() {
             searchInput.value = '';
             catSelect.value = '';
+            updateFamilyOptions();
             famSelect.value = '';
             indSelect.value = '';
             sortBySelect.value = 'rec';
